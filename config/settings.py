@@ -8,14 +8,15 @@ class Settings:
     # API Keys and Credentials
     TMDB_API_KEY = os.getenv('TMDB_API_KEY')
     MONGODB_URI = os.getenv('MONGODB_URI')
-    DEEPAI_API_KEY = os.getenv('DEEPAI_API_KEY')
+    LIGHTX_API_KEY = os.getenv('LIGHTX_API_KEY')
 
     # API URLs
     TMDB_BASE_URL = 'https://api.themoviedb.org/3'
     TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500'
-    DEEPAI_TOONIFY_URL = 'https://api.deepai.org/api/toonify'
+    LIGHTX_AVATAR_URL = 'https://api.lightxeditor.com/external/api/v1/avatar'
+    LIGHTX_STATUS_URL = 'https://api.lightxeditor.com/external/api/v1/order-status'
 
     # Application Settings
-    BATCH_SIZE = 20
-    UPDATE_INTERVAL_DAYS = 7
+    MAX_RETRIES = 5
+    STATUS_CHECK_DELAY = 3
     RATE_LIMIT_DELAY = 1

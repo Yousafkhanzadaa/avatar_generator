@@ -110,3 +110,39 @@
 2024-11-25 00:18:52,553 - utils.logger - INFO - Successfully processed Dyessa Garcia
 2024-11-25 00:18:54,497 - utils.logger - INFO - Skipping Margaret Qualley - recently updated
 2024-11-25 00:18:57,233 - utils.logger - INFO - Successfully processed Tom Hardy
+2024-11-25 02:07:51,516 - utils.logger - INFO - Starting test with celebrity ID: 231909
+2024-11-25 02:07:51,965 - utils.logger - INFO - Processing celebrity: Amy Yip
+2024-11-25 02:07:51,965 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/2w5qVez3WCqSx6bOWkCttJHVjZO.jpg
+2024-11-25 02:07:51,965 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 02:07:52,794 - utils.logger - ERROR - No order ID received from LightX API
+2024-11-25 02:07:52,795 - utils.logger - ERROR - Failed to generate avatar for Amy Yip
+2024-11-25 02:15:51,414 - utils.logger - INFO - Starting test with celebrity ID: 231909
+2024-11-25 02:15:51,649 - utils.logger - INFO - Processing celebrity: Amy Yip
+2024-11-25 02:15:51,650 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/2w5qVez3WCqSx6bOWkCttJHVjZO.jpg
+2024-11-25 02:15:51,650 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 02:15:52,501 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '428a9458d57d4c0c970810882b983425', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-25 02:15:52,501 - utils.logger - ERROR - Error generating avatar with LightX: type object 'Settings' has no attribute 'MAX_RETRIES'
+2024-11-25 02:15:52,501 - utils.logger - ERROR - Failed to generate avatar for Amy Yip
+2024-11-25 02:17:06,363 - utils.logger - INFO - Starting test with celebrity ID: 231909
+2024-11-25 02:17:06,513 - utils.logger - INFO - Processing celebrity: Amy Yip
+2024-11-25 02:17:06,513 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/2w5qVez3WCqSx6bOWkCttJHVjZO.jpg
+2024-11-25 02:17:06,513 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 02:17:07,351 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '198f6c2a507a404eadd6fe7480744fc3', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-25 02:17:07,351 - utils.logger - INFO - Got order ID: 198f6c2a507a404eadd6fe7480744fc3. Waiting for completion...
+2024-11-25 02:17:24,353 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '198f6c2a507a404eadd6fe7480744fc3', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/aiavatar/f045ecd6-79ec-464f-a2ef-a7b57494e3fd.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 7}}
+2024-11-25 02:17:24,354 - utils.logger - INFO - Avatar generation completed
+2024-11-25 02:17:24,355 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/aiavatar/f045ecd6-79ec-464f-a2ef-a7b57494e3fd.jpg
+2024-11-25 02:17:24,984 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 02:17:28,543 - utils.logger - INFO - Successfully processed and saved Amy Yip
+2024-11-25 02:24:01,718 - utils.logger - INFO - Starting test with celebrity ID: 231909
+2024-11-25 02:24:02,948 - utils.logger - INFO - Processing celebrity: Amy Yip
+2024-11-25 02:24:02,948 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/2w5qVez3WCqSx6bOWkCttJHVjZO.jpg
+2024-11-25 02:24:02,948 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 02:24:03,662 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'd5a744cce7f74215b3b70209d4ea827e', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-25 02:24:03,662 - utils.logger - INFO - Got order ID: d5a744cce7f74215b3b70209d4ea827e. Waiting for completion...
+2024-11-25 02:24:19,273 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'd5a744cce7f74215b3b70209d4ea827e', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/aiavatar/c4937e7b-f37c-4041-805c-965d6795ae63.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 5}}
+2024-11-25 02:24:19,274 - utils.logger - INFO - Avatar generation completed
+2024-11-25 02:24:19,274 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/aiavatar/c4937e7b-f37c-4041-805c-965d6795ae63.jpg
+2024-11-25 02:24:19,907 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-25 02:24:19,908 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 02:24:31,883 - utils.logger - INFO - Successfully processed and saved Amy Yip
