@@ -41,12 +41,14 @@ class CelebrityAvatarGenerator:
                 return
 
             # Generate avatar
-            avatar_data = self.avatar_service.generate_avatar(image_data)
+            ###*** Commented
+            # avatar_data = self.avatar_service.generate_avatar(image_data)
+            avatar_data = image_data
             if not avatar_data:
                 return
 
             # Create celebrity object and save to database
-            celebrity = Celebrity(details, avatar_data)
+            celebrity = Celebrity(details)
             self.db.save_celebrity(celebrity.to_dict())
             
             logger.info(f"Successfully processed {celebrity.name}")

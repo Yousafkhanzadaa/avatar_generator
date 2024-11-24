@@ -1,0 +1,70 @@
+2024-11-24 19:00:19,549 - utils.logger - ERROR - Error fetching celebrities page 1: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/popular?page=1
+2024-11-24 19:00:45,520 - utils.logger - ERROR - Error fetching celebrities page 1: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/popular?page=1
+2024-11-24 19:07:22,918 - utils.logger - ERROR - Error fetching celebrities page 1: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/popular?page=1
+2024-11-24 19:09:54,135 - utils.logger - ERROR - Error fetching celebrities page 1: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/popular?page=1
+2024-11-24 19:10:39,530 - utils.logger - ERROR - Error fetching celebrities page 1: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/popular?page=1
+2024-11-24 19:30:44,449 - utils.logger - ERROR - Error fetching celebrities page 1: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/popular?page=1
+2024-11-24 19:33:03,248 - utils.logger - ERROR - Error fetching celebrities page 1: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/popular?page=1
+2024-11-24 19:33:55,758 - utils.logger - ERROR - Error fetching celebrities page 1: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/popular?page=1
+2024-11-24 19:36:37,382 - utils.logger - INFO - Fetched page 1 of celebrities
+2024-11-24 19:36:40,713 - utils.logger - ERROR - Error fetching details for celebrity 129700: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/129700
+2024-11-24 19:36:40,714 - utils.logger - INFO - Skipping Nozomi Sasaki - no profile image
+2024-11-24 19:36:41,385 - utils.logger - ERROR - Error fetching details for celebrity 2710789: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/2710789
+2024-11-24 19:36:41,386 - utils.logger - INFO - Skipping Seung Ha - no profile image
+2024-11-24 19:36:42,083 - utils.logger - ERROR - Error fetching details for celebrity 1245: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/1245
+2024-11-24 19:36:42,084 - utils.logger - INFO - Skipping Scarlett Johansson - no profile image
+2024-11-24 19:36:42,747 - utils.logger - ERROR - Error fetching details for celebrity 64: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/64
+2024-11-24 19:36:42,747 - utils.logger - INFO - Skipping Gary Oldman - no profile image
+2024-11-24 19:36:43,421 - utils.logger - ERROR - Error fetching details for celebrity 81866: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/81866
+2024-11-24 19:36:43,423 - utils.logger - INFO - Skipping Daiki Nakamura - no profile image
+2024-11-24 19:36:44,086 - utils.logger - ERROR - Error fetching details for celebrity 2049994: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/2049994
+2024-11-24 19:36:44,087 - utils.logger - INFO - Skipping Zhao Lusi - no profile image
+2024-11-24 19:36:44,764 - utils.logger - ERROR - Error fetching details for celebrity 224513: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/224513
+2024-11-24 19:36:44,764 - utils.logger - INFO - Skipping Ana de Armas - no profile image
+2024-11-24 19:36:45,423 - utils.logger - ERROR - Error fetching details for celebrity 1253360: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/1253360
+2024-11-24 19:36:45,424 - utils.logger - INFO - Skipping Pedro Pascal - no profile image
+2024-11-24 19:36:46,087 - utils.logger - ERROR - Error fetching details for celebrity 92614: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/92614
+2024-11-24 19:36:46,089 - utils.logger - INFO - Skipping Dawn Olivieri - no profile image
+2024-11-24 19:36:46,748 - utils.logger - ERROR - Error fetching details for celebrity 1223786: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/1223786
+2024-11-24 19:36:46,749 - utils.logger - INFO - Skipping Emilia Clarke - no profile image
+2024-11-24 19:36:47,412 - utils.logger - ERROR - Error fetching details for celebrity 192: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/192
+2024-11-24 19:36:47,414 - utils.logger - INFO - Skipping Morgan Freeman - no profile image
+2024-11-24 19:36:48,080 - utils.logger - ERROR - Error fetching details for celebrity 4103293: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/4103293
+2024-11-24 19:36:48,081 - utils.logger - INFO - Skipping Jenn Rosa - no profile image
+2024-11-24 19:36:48,804 - utils.logger - ERROR - Error fetching details for celebrity 141801: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/141801
+2024-11-24 19:36:48,805 - utils.logger - INFO - Skipping Paige Tamada - no profile image
+2024-11-24 19:36:49,483 - utils.logger - ERROR - Error fetching details for celebrity 1215399: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/1215399
+2024-11-24 19:36:49,484 - utils.logger - INFO - Skipping Taylor Sheridan - no profile image
+2024-11-24 19:36:50,216 - utils.logger - ERROR - Error fetching details for celebrity 976: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/976
+2024-11-24 19:36:50,217 - utils.logger - INFO - Skipping Jason Statham - no profile image
+2024-11-24 19:36:50,878 - utils.logger - ERROR - Error fetching details for celebrity 115440: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/115440
+2024-11-24 19:36:50,880 - utils.logger - INFO - Skipping Sydney Sweeney - no profile image
+2024-11-24 19:36:51,544 - utils.logger - ERROR - Error fetching details for celebrity 1392137: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/1392137
+2024-11-24 19:36:51,545 - utils.logger - INFO - Skipping Margaret Qualley - no profile image
+2024-11-24 19:36:52,217 - utils.logger - ERROR - Error fetching details for celebrity 1373737: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/1373737
+2024-11-24 19:36:52,217 - utils.logger - INFO - Skipping Florence Pugh - no profile image
+2024-11-24 19:36:52,891 - utils.logger - ERROR - Error fetching details for celebrity 231909: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/231909
+2024-11-24 19:36:52,892 - utils.logger - INFO - Skipping Amy Yip - no profile image
+2024-11-24 19:36:53,569 - utils.logger - ERROR - Error fetching details for celebrity 2280178: 401 Client Error: Unauthorized for url: https://api.themoviedb.org/3/person/2280178
+2024-11-24 19:36:53,569 - utils.logger - INFO - Skipping Sofia Kappel - no profile image
+2024-11-24 19:42:33,357 - utils.logger - INFO - Fetched page 1 of celebrities
+2024-11-24 19:42:37,708 - utils.logger - INFO - Successfully processed Nozomi Sasaki
+2024-11-24 19:42:40,613 - utils.logger - INFO - Successfully processed Seung Ha
+2024-11-24 19:42:43,138 - utils.logger - INFO - Successfully processed Scarlett Johansson
+2024-11-24 19:42:45,777 - utils.logger - INFO - Successfully processed Gary Oldman
+2024-11-24 19:42:48,336 - utils.logger - INFO - Successfully processed Daiki Nakamura
+2024-11-24 19:42:50,937 - utils.logger - INFO - Successfully processed Zhao Lusi
+2024-11-24 19:42:53,295 - utils.logger - INFO - Successfully processed Ana de Armas
+2024-11-24 19:42:55,811 - utils.logger - INFO - Successfully processed Pedro Pascal
+2024-11-24 19:42:58,411 - utils.logger - INFO - Successfully processed Dawn Olivieri
+2024-11-24 19:43:00,975 - utils.logger - INFO - Successfully processed Emilia Clarke
+2024-11-24 19:43:03,530 - utils.logger - INFO - Successfully processed Morgan Freeman
+2024-11-24 19:43:05,987 - utils.logger - INFO - Successfully processed Jenn Rosa
+2024-11-24 19:43:08,443 - utils.logger - INFO - Successfully processed Paige Tamada
+2024-11-24 19:43:11,075 - utils.logger - INFO - Successfully processed Taylor Sheridan
+2024-11-24 19:43:13,628 - utils.logger - INFO - Successfully processed Jason Statham
+2024-11-24 19:43:16,137 - utils.logger - INFO - Successfully processed Sydney Sweeney
+2024-11-24 19:43:18,632 - utils.logger - INFO - Successfully processed Margaret Qualley
+2024-11-24 19:43:22,210 - utils.logger - INFO - Successfully processed Florence Pugh
+2024-11-24 19:43:24,892 - utils.logger - INFO - Successfully processed Amy Yip
+2024-11-24 19:43:27,371 - utils.logger - INFO - Successfully processed Sofia Kappel

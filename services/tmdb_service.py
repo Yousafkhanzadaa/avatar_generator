@@ -6,18 +6,20 @@ import time
 class TMDBService:
     def __init__(self):
         self.headers = {
-            'Authorization': f'Bearer {Settings.TMDB_API_KEY}',
-            'Content-Type': 'application/json;charset=utf-8'
+            # 'Authorization': f'Bearer {Settings.TMDB_API_KEY}',
+            'Content-Type': 'application/json'
         }
 
     def fetch_popular_celebrities(self, num_pages=5):
         all_celebrities = []
-        for page in range(1, num_pages + 1):
+        #** Commented
+        # for page in range(1, num_pages + 1):
+        for page in range(1, 2):
             try:
                 response = requests.get(
                     f'{Settings.TMDB_BASE_URL}/person/popular',
                     headers=self.headers,
-                    params={'page': page}
+                    params={'page': page, 'api_key': Settings.TMDB_API_KEY}
                 )
                 response.raise_for_status()
                 celebrities = response.json()['results']
@@ -33,7 +35,8 @@ class TMDBService:
         try:
             response = requests.get(
                 f'{Settings.TMDB_BASE_URL}/person/{celebrity_id}',
-                headers=self.headers
+                headers=self.headers,
+                params={ 'api_key': Settings.TMDB_API_KEY}
             )
             response.raise_for_status()
             return response.json()
