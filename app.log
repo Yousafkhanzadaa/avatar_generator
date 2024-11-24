@@ -68,3 +68,45 @@
 2024-11-24 19:43:22,210 - utils.logger - INFO - Successfully processed Florence Pugh
 2024-11-24 19:43:24,892 - utils.logger - INFO - Successfully processed Amy Yip
 2024-11-24 19:43:27,371 - utils.logger - INFO - Successfully processed Sofia Kappel
+2024-11-24 19:52:13,073 - utils.logger - INFO - Fetched page 1 of celebrities
+2024-11-24 19:52:18,567 - utils.logger - INFO - Successfully processed Nozomi Sasaki
+2024-11-24 19:52:21,541 - utils.logger - INFO - Successfully processed Seung Ha
+2024-11-24 19:52:24,135 - utils.logger - INFO - Successfully processed Scarlett Johansson
+2024-11-24 19:52:27,166 - utils.logger - INFO - Successfully processed Gary Oldman
+2024-11-24 19:52:29,442 - utils.logger - INFO - Successfully processed Daiki Nakamura
+2024-11-24 19:52:32,733 - utils.logger - INFO - Successfully processed Zhao Lusi
+2024-11-24 19:52:35,076 - utils.logger - INFO - Successfully processed Ana de Armas
+2024-11-24 19:52:37,385 - utils.logger - INFO - Successfully processed Pedro Pascal
+2024-11-24 19:52:39,761 - utils.logger - INFO - Successfully processed Dawn Olivieri
+2024-11-24 19:52:42,091 - utils.logger - INFO - Successfully processed Emilia Clarke
+2024-11-24 19:52:44,449 - utils.logger - INFO - Successfully processed Morgan Freeman
+2024-11-24 19:52:46,725 - utils.logger - INFO - Successfully processed Jenn Rosa
+2024-11-24 19:52:49,369 - utils.logger - INFO - Successfully processed Paige Tamada
+2024-11-24 19:52:51,682 - utils.logger - INFO - Successfully processed Taylor Sheridan
+2024-11-24 19:52:54,007 - utils.logger - INFO - Successfully processed Jason Statham
+2024-11-24 19:52:56,316 - utils.logger - INFO - Successfully processed Sydney Sweeney
+2024-11-24 19:52:58,588 - utils.logger - INFO - Successfully processed Margaret Qualley
+2024-11-24 19:53:01,118 - utils.logger - INFO - Successfully processed Florence Pugh
+2024-11-24 19:53:03,652 - utils.logger - INFO - Successfully processed Amy Yip
+2024-11-24 19:53:05,925 - utils.logger - INFO - Successfully processed Sofia Kappel
+2024-11-25 00:17:51,024 - utils.logger - INFO - Fetched page 2 of celebrities
+2024-11-25 00:17:55,810 - utils.logger - INFO - Successfully processed Will Smith
+2024-11-25 00:17:59,269 - utils.logger - INFO - Successfully processed Naomi Scott
+2024-11-25 00:18:01,162 - utils.logger - INFO - Skipping Emilia Clarke - recently updated
+2024-11-25 00:18:04,723 - utils.logger - INFO - Successfully processed Jenna Ortega
+2024-11-25 00:18:08,167 - utils.logger - INFO - Successfully processed Zhao Liying
+2024-11-25 00:18:11,737 - utils.logger - INFO - Successfully processed Margot Robbie
+2024-11-25 00:18:15,574 - utils.logger - INFO - Successfully processed Sabrina Carpenter
+2024-11-25 00:18:19,333 - utils.logger - INFO - Successfully processed Sylvester Stallone
+2024-11-25 00:18:22,490 - utils.logger - INFO - Successfully processed Yang Mi
+2024-11-25 00:18:26,490 - utils.logger - INFO - Successfully processed Yoon Yool
+2024-11-25 00:18:29,940 - utils.logger - INFO - Successfully processed Christine Bermas
+2024-11-25 00:18:33,257 - utils.logger - INFO - Successfully processed Genesis Rodriguez
+2024-11-25 00:18:37,014 - utils.logger - INFO - Successfully processed Emma Watson
+2024-11-25 00:18:40,211 - utils.logger - INFO - Successfully processed Keanu Reeves
+2024-11-25 00:18:43,913 - utils.logger - INFO - Successfully processed Ariana Grande
+2024-11-25 00:18:46,970 - utils.logger - INFO - Successfully processed Dwayne Johnson
+2024-11-25 00:18:49,782 - utils.logger - INFO - Successfully processed A.J. Simmons
+2024-11-25 00:18:52,553 - utils.logger - INFO - Successfully processed Dyessa Garcia
+2024-11-25 00:18:54,497 - utils.logger - INFO - Skipping Margaret Qualley - recently updated
+2024-11-25 00:18:57,233 - utils.logger - INFO - Successfully processed Tom Hardy

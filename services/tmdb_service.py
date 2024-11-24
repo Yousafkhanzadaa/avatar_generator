@@ -14,7 +14,7 @@ class TMDBService:
         all_celebrities = []
         #** Commented
         # for page in range(1, num_pages + 1):
-        for page in range(1, 2):
+        for page in range(2, 3):
             try:
                 response = requests.get(
                     f'{Settings.TMDB_BASE_URL}/person/popular',
