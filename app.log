@@ -198,3 +198,57 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-11-25 13:47:21,550 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-11-25 13:47:21,558 - utils.logger - ERROR - Error generating creative biography: name 'completion' is not defined
 2024-11-25 13:47:21,558 - utils.logger - ERROR - Error processing celebrity ID 115440: name 'celeb_basic' is not defined
+2024-11-25 17:08:15,725 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-25 17:08:16,287 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-25 17:08:16,289 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/wrPmsC9YATcnyAxvXEdGshccbqU.jpg
+2024-11-25 17:08:16,289 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 17:08:17,153 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '106922d19ae64df0be674b3e9a484dc9', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-25 17:08:17,154 - utils.logger - INFO - Got order ID: 106922d19ae64df0be674b3e9a484dc9. Waiting for completion...
+2024-11-25 17:08:32,797 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '106922d19ae64df0be674b3e9a484dc9', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/106922d19ae64df0be674b3e9a484dc9_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 7}}
+2024-11-25 17:08:32,798 - utils.logger - INFO - Avatar generation completed
+2024-11-25 17:08:32,798 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/106922d19ae64df0be674b3e9a484dc9_1024x1024.jpg
+2024-11-25 17:08:33,685 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-25 17:08:33,686 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 17:08:41,279 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-25 17:08:41,288 - utils.logger - ERROR - Error generating creative biography: name 'completion' is not defined
+2024-11-25 17:08:41,289 - utils.logger - ERROR - Error processing celebrity ID 115440: name 'celeb_basic' is not defined
+2024-11-25 17:10:12,069 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-25 17:10:12,434 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-25 17:10:12,434 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 17:10:12,434 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 17:10:19,928 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-25 17:10:19,939 - utils.logger - ERROR - Error generating creative biography: name 'completion' is not defined
+2024-11-25 17:10:19,939 - utils.logger - ERROR - Error processing celebrity ID 115440: name 'celeb_basic' is not defined
+2024-11-25 17:15:04,305 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-25 17:15:04,543 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-25 17:15:04,544 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 17:15:04,544 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 17:15:12,484 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-25 17:15:12,494 - utils.logger - ERROR - Error generating creative biography: name 'completion' is not defined
+2024-11-25 17:15:12,494 - utils.logger - ERROR - Error processing celebrity ID 115440: name 'celeb_basic' is not defined
+2024-11-25 17:19:17,720 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-25 17:19:17,961 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-25 17:19:17,962 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 17:19:17,962 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 17:19:25,857 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-25 17:19:25,867 - utils.logger - ERROR - Error generating creative biography: 'ChatCompletionMessage' object is not subscriptable
+2024-11-25 17:19:25,868 - utils.logger - ERROR - Error processing celebrity ID 115440: name 'celeb_basic' is not defined
+2024-11-25 17:19:53,858 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-25 17:19:54,011 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-25 17:19:54,011 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 17:19:54,011 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 17:20:01,681 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-25 17:20:03,592 - utils.logger - INFO - Successfully processed and saved Sydney Sweeney
+2024-11-25 17:21:27,844 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-25 17:21:28,086 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-25 17:21:28,087 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/wrPmsC9YATcnyAxvXEdGshccbqU.jpg
+2024-11-25 17:21:28,087 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 17:21:28,918 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '8369655711a6471b80b248e85f1b6530', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-25 17:21:28,919 - utils.logger - INFO - Got order ID: 8369655711a6471b80b248e85f1b6530. Waiting for completion...
+2024-11-25 17:21:44,556 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '8369655711a6471b80b248e85f1b6530', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/8369655711a6471b80b248e85f1b6530_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 4}}
+2024-11-25 17:21:44,556 - utils.logger - INFO - Avatar generation completed
+2024-11-25 17:21:44,557 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/8369655711a6471b80b248e85f1b6530_1024x1024.jpg
+2024-11-25 17:21:45,283 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-25 17:21:45,284 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 17:21:53,032 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-25 17:22:01,707 - utils.logger - INFO - Successfully processed and saved Sydney Sweeney

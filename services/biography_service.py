@@ -34,7 +34,7 @@ class BiographyService:
                 max_tokens=500
             )
             
-            return completion.choices[0].message.content.strip()
+            return response.choices[0].message.content.strip()
         
         except Exception as e:
             logger.error(f"Error generating creative biography: {str(e)}")
