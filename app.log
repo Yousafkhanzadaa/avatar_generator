@@ -146,3 +146,55 @@
 2024-11-25 02:24:19,907 - utils.logger - INFO - Successfully converted avatar to base64
 2024-11-25 02:24:19,908 - utils.logger - INFO - Avatar generated successfully
 2024-11-25 02:24:31,883 - utils.logger - INFO - Successfully processed and saved Amy Yip
+2024-11-25 13:12:02,289 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-25 13:12:03,015 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-25 13:12:03,015 - utils.logger - ERROR - Error processing celebrity ID 115440: cannot access local variable 'celebrity' where it is not associated with a value
+2024-11-25 13:25:47,322 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-25 13:25:48,178 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-25 13:25:48,179 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/wrPmsC9YATcnyAxvXEdGshccbqU.jpg
+2024-11-25 13:25:48,179 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 13:25:49,049 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '75f5639d06e9488aaf6e4b7de17493b2', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-25 13:25:49,049 - utils.logger - INFO - Got order ID: 75f5639d06e9488aaf6e4b7de17493b2. Waiting for completion...
+2024-11-25 13:26:04,701 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '75f5639d06e9488aaf6e4b7de17493b2', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/aiavatar/22b52d99-c9f6-4ed2-ad50-2210f3334bad.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 3}}
+2024-11-25 13:26:04,702 - utils.logger - INFO - Avatar generation completed
+2024-11-25 13:26:04,703 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/aiavatar/22b52d99-c9f6-4ed2-ad50-2210f3334bad.jpg
+2024-11-25 13:26:07,783 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-25 13:26:07,784 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 13:26:07,785 - utils.logger - ERROR - Error generating creative biography: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-11-25 13:26:07,785 - utils.logger - ERROR - Error processing celebrity ID 115440: name 'celeb_basic' is not defined
+2024-11-25 13:32:54,994 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-25 13:32:55,505 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-25 13:32:55,505 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/wrPmsC9YATcnyAxvXEdGshccbqU.jpg
+2024-11-25 13:32:55,505 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 13:32:56,340 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'f8c24190ace14550b0d4680f9610a078', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-25 13:32:56,340 - utils.logger - INFO - Got order ID: f8c24190ace14550b0d4680f9610a078. Waiting for completion...
+2024-11-25 13:33:11,950 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'f8c24190ace14550b0d4680f9610a078', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/aiavatar/e652157f-bdff-40b0-bc3d-8bbec6fcf7ae.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 6}}
+2024-11-25 13:33:11,953 - utils.logger - INFO - Avatar generation completed
+2024-11-25 13:33:11,953 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/aiavatar/e652157f-bdff-40b0-bc3d-8bbec6fcf7ae.jpg
+2024-11-25 13:33:15,137 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-25 13:33:15,138 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 13:33:15,138 - utils.logger - ERROR - Error generating creative biography: 'known_for'
+2024-11-25 13:33:15,138 - utils.logger - ERROR - Error processing celebrity ID 115440: name 'celeb_basic' is not defined
+2024-11-25 13:46:53,537 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-25 13:46:54,246 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-25 13:46:54,247 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/wrPmsC9YATcnyAxvXEdGshccbqU.jpg
+2024-11-25 13:46:54,247 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-25 13:46:55,189 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '50089523e1264dbca2cb6f5d11778abc', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-25 13:46:55,189 - utils.logger - INFO - Got order ID: 50089523e1264dbca2cb6f5d11778abc. Waiting for completion...
+2024-11-25 13:47:10,824 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '50089523e1264dbca2cb6f5d11778abc', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/aiavatar/e12b4f19-11d3-406b-83f6-f6981e0f7abf.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 5}}
+2024-11-25 13:47:10,827 - utils.logger - INFO - Avatar generation completed
+2024-11-25 13:47:10,827 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/aiavatar/e12b4f19-11d3-406b-83f6-f6981e0f7abf.jpg
+2024-11-25 13:47:13,998 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-25 13:47:13,999 - utils.logger - INFO - Avatar generated successfully
+2024-11-25 13:47:21,550 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-25 13:47:21,558 - utils.logger - ERROR - Error generating creative biography: name 'completion' is not defined
+2024-11-25 13:47:21,558 - utils.logger - ERROR - Error processing celebrity ID 115440: name 'celeb_basic' is not defined

@@ -1,12 +1,13 @@
 # services/biography_service.py
-import openai
+from openai import OpenAI
 from config.settings import Settings
 from utils.logger import logger
 
-class BiographyService:
-    def __init__(self):
-        openai.api_key = Settings.OPENAI_API_KEY
+client = OpenAI(api_key=Settings.OPENAI_API_KEY)
 
+class BiographyService:
+    # def __init__(self):
+    #     openai.api_key = Settings.OPENAI_API_KEY
     def generate_creative_biography(self, celebrity_data):
         """
         Generates a creative, fictionalized biography based on the celebrity's real information.
@@ -16,8 +17,8 @@ class BiographyService:
             # Create a detailed prompt that captures key aspects while encouraging creativity
             prompt = self._create_biography_prompt(celebrity_data)
             
-            response = openai.ChatCompletion.create(
-                model="gpt-4",
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
                 messages=[{
                     "role": "system",
                     "content": """You are a creative biographer who transforms real celebrity 
@@ -29,11 +30,11 @@ class BiographyService:
                     "role": "user",
                     "content": prompt
                 }],
-                temperature=0.8,
+                temperature=0.6,
                 max_tokens=500
             )
             
-            return response.choices[0].message.content.strip()
+            return completion.choices[0].message.content.strip()
         
         except Exception as e:
             logger.error(f"Error generating creative biography: {str(e)}")
@@ -43,21 +44,21 @@ class BiographyService:
         """
         Creates a detailed prompt for the GPT model based on celebrity data.
         """
-        name = celebrity_data.get('name', '')
-        known_for = celebrity_data.get('known_for', [])
-        original_bio = celebrity_data.get('biography', '')
-        birthday = celebrity_data.get('birthday', '')
+        name = celebrity_data['name']
+        # known_for = celebrity_data['known_for']
+        original_bio = celebrity_data['biography']
+        birthday = celebrity_data['birthday']
 
         # Extract key career achievements and roles
-        career_highlights = [item.get('title', '') for item in known_for]
+        # career_highlights = [item.get('title', '') for item in known_for]
         
+        # - Known for: {', '.join(career_highlights)}
         return f"""
         Transform this celebrity's biography into a creative, fictional narrative.
         Original details:
         - Career field: Actor/Actress
-        - Known for: {', '.join(career_highlights)}
         - Era active: {birthday}
-        - Original bio excerpt: {original_bio[:200]}...
+        - Original bio excerpt: {original_bio}...
 
         Create a whimsical, engaging biography that:
         1. Transforms their career journey into a metaphorical adventure

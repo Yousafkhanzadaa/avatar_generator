@@ -9,6 +9,7 @@ class Settings:
     TMDB_API_KEY = os.getenv('TMDB_API_KEY')
     MONGODB_URI = os.getenv('MONGODB_URI')
     LIGHTX_API_KEY = os.getenv('LIGHTX_API_KEY')
+    OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
     # API URLs
     TMDB_BASE_URL = 'https://api.themoviedb.org/3'

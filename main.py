@@ -86,31 +86,31 @@ class CelebrityAvatarGenerator:
 
             # Create celebrity object and save to database
             celebrity = Celebrity(details, avatar_data)
-            self.db.save_celebrity(celebrity.to_dict())
+            self.db.save_celebrity(celebrity)
             
             logger.info(f"Successfully processed and saved {details['name']}")
 
         except Exception as e:
             logger.error(f"Error processing celebrity ID {celebrity_id}: {str(e)}")
 
-    # def run(self):
-    #     try:
-    #         celebrities = self.tmdb_service.fetch_popular_celebrities()
-    #         for celeb in celebrities:
-    #             self.process_celebrity(celeb)
-    #     finally:
-    #         self.db.close()
-    
-    #** Testing
-    def run_test(self):
+    def run(self):
         try:
-            # Test with a specific celebrity ID
-            # Example: Tom Cruise's TMDB ID is 500
-            test_celebrity_id = 231909  # You can change this to any celebrity ID
-            logger.info(f"Starting test with celebrity ID: {test_celebrity_id}")
-            self.process_single_celebrity(test_celebrity_id)
+            celebrities = self.tmdb_service.fetch_popular_celebrities()
+            for celeb in celebrities:
+                self.process_celebrity(celeb)
         finally:
             self.db.close()
+    
+    #** Testing
+    # def run_test(self):
+    #     try:
+    #         # Test with a specific celebrity ID
+    #         # Example: Tom Cruise's TMDB ID is 500
+    #         test_celebrity_id = 231909  # You can change this to any celebrity ID
+    #         logger.info(f"Starting test with celebrity ID: {test_celebrity_id}")
+    #         self.process_single_celebrity(test_celebrity_id)
+    #     finally:
+    #         self.db.close()
 
 def main():
     generator = CelebrityAvatarGenerator()

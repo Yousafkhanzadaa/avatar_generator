@@ -2,3 +2,4 @@ python-dotenv
 pymongo
 requests
 Pillow
+openai
