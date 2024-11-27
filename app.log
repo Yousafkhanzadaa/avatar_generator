@@ -252,3 +252,118 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-11-25 17:21:45,284 - utils.logger - INFO - Avatar generated successfully
 2024-11-25 17:21:53,032 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-11-25 17:22:01,707 - utils.logger - INFO - Successfully processed and saved Sydney Sweeney
+2024-11-25 18:35:38,049 - utils.logger - INFO - Fetched page 1 of celebrities
+2024-11-25 18:35:39,625 - utils.logger - INFO - Fetched page 2 of celebrities
+2024-11-25 18:35:41,246 - utils.logger - INFO - Fetched page 3 of celebrities
+2024-11-25 18:35:42,879 - utils.logger - INFO - Fetched page 4 of celebrities
+2024-11-25 18:35:44,450 - utils.logger - INFO - Fetched page 5 of celebrities
+2024-11-25 18:35:46,047 - utils.logger - INFO - Fetched page 6 of celebrities
+2024-11-25 18:35:47,650 - utils.logger - INFO - Fetched page 7 of celebrities
+2024-11-25 18:35:49,242 - utils.logger - INFO - Fetched page 8 of celebrities
+2024-11-25 18:35:50,824 - utils.logger - INFO - Fetched page 9 of celebrities
+2024-11-25 18:35:52,410 - utils.logger - INFO - Fetched page 10 of celebrities
+2024-11-25 18:36:16,116 - utils.logger - INFO - Fetched page 1 of celebrities
+2024-11-25 18:36:17,616 - utils.logger - INFO - Fetched page 2 of celebrities
+2024-11-25 18:36:19,104 - utils.logger - INFO - Fetched page 3 of celebrities
+2024-11-25 18:36:20,590 - utils.logger - INFO - Fetched page 4 of celebrities
+2024-11-25 18:36:22,091 - utils.logger - INFO - Fetched page 5 of celebrities
+2024-11-25 18:36:23,671 - utils.logger - INFO - Fetched page 6 of celebrities
+2024-11-25 18:36:25,157 - utils.logger - INFO - Fetched page 7 of celebrities
+2024-11-25 18:36:26,640 - utils.logger - INFO - Fetched page 8 of celebrities
+2024-11-25 18:36:28,126 - utils.logger - INFO - Fetched page 9 of celebrities
+2024-11-25 18:36:29,610 - utils.logger - INFO - Fetched page 10 of celebrities
+2024-11-25 18:37:06,539 - utils.logger - INFO - Fetched page 1 of celebrities
+2024-11-25 18:37:07,995 - utils.logger - INFO - Fetched page 2 of celebrities
+2024-11-25 18:37:09,460 - utils.logger - INFO - Fetched page 3 of celebrities
+2024-11-25 18:37:10,919 - utils.logger - INFO - Fetched page 4 of celebrities
+2024-11-25 18:37:12,372 - utils.logger - INFO - Fetched page 5 of celebrities
+2024-11-25 18:37:14,129 - utils.logger - INFO - Fetched page 6 of celebrities
+2024-11-25 18:37:15,597 - utils.logger - INFO - Fetched page 7 of celebrities
+2024-11-25 18:37:17,055 - utils.logger - INFO - Fetched page 8 of celebrities
+2024-11-25 18:37:18,525 - utils.logger - INFO - Fetched page 9 of celebrities
+2024-11-25 18:37:20,000 - utils.logger - INFO - Fetched page 10 of celebrities
+2024-11-27 02:57:41,178 - utils.logger - INFO - Starting test with celebrity ID: 1245
+2024-11-27 02:57:41,836 - utils.logger - INFO - Processing celebrity: Scarlett Johansson
+2024-11-27 02:57:41,836 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/6NsMbJXRlDZuDzatN2akFdGuTvx.jpg
+2024-11-27 02:57:41,836 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 02:57:42,692 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'cbfaa41bae5b406e8864463275503631', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-27 02:57:42,692 - utils.logger - INFO - Got order ID: cbfaa41bae5b406e8864463275503631. Waiting for completion...
+2024-11-27 02:57:58,314 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'cbfaa41bae5b406e8864463275503631', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/cbfaa41bae5b406e8864463275503631_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 5}}
+2024-11-27 02:57:58,316 - utils.logger - INFO - Avatar generation completed
+2024-11-27 02:57:58,317 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/cbfaa41bae5b406e8864463275503631_1024x1024.jpg
+2024-11-27 02:58:00,237 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-27 02:58:00,239 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 02:58:00,240 - utils.logger - ERROR - Error checking celebrity global popularity: 'BiographyService' object has no attribute '_create_global_popularity_prompt'
+2024-11-27 02:59:11,072 - utils.logger - INFO - Starting test with celebrity ID: 1245
+2024-11-27 02:59:11,620 - utils.logger - INFO - Processing celebrity: Scarlett Johansson
+2024-11-27 02:59:11,620 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/6NsMbJXRlDZuDzatN2akFdGuTvx.jpg
+2024-11-27 02:59:11,621 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 02:59:11,621 - utils.logger - ERROR - Error processing celebrity ID 1245: name 'avatar_data' is not defined
+2024-11-27 02:59:26,749 - utils.logger - INFO - Starting test with celebrity ID: 1245
+2024-11-27 02:59:27,218 - utils.logger - INFO - Processing celebrity: Scarlett Johansson
+2024-11-27 02:59:27,219 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/6NsMbJXRlDZuDzatN2akFdGuTvx.jpg
+2024-11-27 02:59:27,219 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 02:59:27,219 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 02:59:28,677 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 02:59:42,384 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 02:59:44,307 - utils.logger - INFO - Successfully processed and saved Scarlett Johansson
+2024-11-27 03:00:43,794 - utils.logger - INFO - Starting test with celebrity ID: 2194626
+2024-11-27 03:00:44,432 - utils.logger - INFO - Processing celebrity: A.J. Simmons
+2024-11-27 03:00:44,432 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/AhUqWdIOaVLXIVIpPGczacGRTEl.jpg
+2024-11-27 03:00:44,432 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 03:00:44,432 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 03:00:45,662 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 03:01:04,084 - utils.logger - INFO - Starting test with celebrity ID: 93252
+2024-11-27 03:01:04,657 - utils.logger - INFO - Processing celebrity: Kim Hae-sook
+2024-11-27 03:01:04,657 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/dt5bmKeG7qbvDwHrxFZFxiGc9fZ.jpg
+2024-11-27 03:01:04,657 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 03:01:04,657 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 03:01:05,279 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 03:01:18,753 - utils.logger - INFO - Starting test with celebrity ID: 224513
+2024-11-27 03:01:19,351 - utils.logger - INFO - Processing celebrity: Ana de Armas
+2024-11-27 03:01:19,352 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/3vxvsmYLTf4jnr163SUlBIw51ee.jpg
+2024-11-27 03:01:19,352 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 03:01:19,352 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 03:01:20,733 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 03:01:42,329 - utils.logger - INFO - Starting test with celebrity ID: 1253360
+2024-11-27 03:01:42,885 - utils.logger - INFO - Processing celebrity: Pedro Pascal
+2024-11-27 03:01:42,886 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/9VYK7oxcqhjd5LAH6ZFJ3XzOlID.jpg
+2024-11-27 03:01:42,886 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 03:01:42,886 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 03:01:43,576 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 03:02:09,830 - utils.logger - INFO - Starting test with celebrity ID: 974169
+2024-11-27 03:02:10,459 - utils.logger - INFO - Processing celebrity: Jenna Ortega
+2024-11-27 03:02:10,459 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/q1NRzyZQlYkxLY07GO9NVPkQnu8.jpg
+2024-11-27 03:02:10,459 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 03:02:10,459 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 03:02:11,622 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 03:02:43,733 - utils.logger - INFO - Starting test with celebrity ID: 2049994
+2024-11-27 03:02:44,297 - utils.logger - INFO - Processing celebrity: Zhao Lusi
+2024-11-27 03:02:44,297 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/edHYkTOynX6sBe82ToIJdlG22hu.jpg
+2024-11-27 03:02:44,297 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 03:02:44,297 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 03:02:45,648 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 03:03:05,523 - utils.logger - INFO - Starting test with celebrity ID: 2049994
+2024-11-27 03:03:05,977 - utils.logger - INFO - Processing celebrity: Zhao Lusi
+2024-11-27 03:03:05,977 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/edHYkTOynX6sBe82ToIJdlG22hu.jpg
+2024-11-27 03:03:05,978 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 03:03:05,978 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 03:03:07,362 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 03:04:10,000 - utils.logger - INFO - Starting test with celebrity ID: 2049994
+2024-11-27 03:04:10,451 - utils.logger - INFO - Processing celebrity: Zhao Lusi
+2024-11-27 03:04:10,451 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/edHYkTOynX6sBe82ToIJdlG22hu.jpg
+2024-11-27 03:04:10,451 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 03:04:10,451 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 03:04:18,880 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 03:04:43,822 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-27 03:04:44,175 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-27 03:04:44,175 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/wrPmsC9YATcnyAxvXEdGshccbqU.jpg
+2024-11-27 03:04:44,175 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 03:04:44,175 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 03:04:45,479 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-27 03:14:10,186 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-27 03:14:10,417 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-27 03:14:10,417 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/wrPmsC9YATcnyAxvXEdGshccbqU.jpg
+2024-11-27 03:14:10,417 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-27 03:14:10,417 - utils.logger - INFO - Avatar generated successfully
+2024-11-27 03:14:11,854 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
