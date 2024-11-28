@@ -10,11 +10,10 @@ class TMDBService:
             'Content-Type': 'application/json'
         }
 
-    def fetch_popular_celebrities(self, num_pages=5):
+    def fetch_popular_celebrities(self, num_pages=15):
         all_celebrities = []
         #** Commented
-        # for page in range(1, num_pages + 1):
-        for page in range(2, 3):
+        for page in range(10, 20):
             try:
                 response = requests.get(
                     f'{Settings.TMDB_BASE_URL}/person/popular',

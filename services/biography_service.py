@@ -65,12 +65,16 @@ class BiographyService:
                   "role": "user",
                   "content": prompt
               }],
-              temperature=0.2,  # Low temperature for more deterministic response
+              temperature=0.6,  # Low temperature for more deterministic response
               max_tokens=10     # Very low token count to ensure concise yes/no
           )
           
           # Extract and clean the response
           result = response.choices[0].message.content.strip().lower()
+          
+          print(result)
+          print(result)
+          print(result)
           
           # Ensure only "yes" or "no" is returned
           return "yes" if result == "yes" else "no"
@@ -130,24 +134,76 @@ class BiographyService:
       popularity = celebrity_data['popularity']
 
       # Prompt designed to evaluate global popularity and teen appeal
-      popularity_prompt = f"""
-      Analyze the following celebrity details and determine if they have:
-      1. EXTREME global fame (worldwide recognition)
-      2. MASSIVE fan following
-      
-      Celebrity Name: {name}
-      TMDB Popularity Score: {popularity}
-      birthday: {birthday}
-      Biography Excerpt: {biography}
+#       popularity_prompt = f"""
+# Analyze the following celebrity details and determine if they meet the criteria for:
+# 1. EXTREME global fame (worldwide recognition)
+# 2. MASSIVE fan following
 
-      IMPORTANT RULES:
-      - ONLY respond with "yes" IF:
-        a) Celebrity is GLOBALLY recognized
-      - ONLY respond with "yes" for truly GLOBAL icons
-      - Respond with "no" for any doubt or less than EXTREME fame
-      - Consider factors like social media following, global movie/music success, 
-        and widespread cultural impact
-      - Be EXTREMELY selective about who qualifies as a global teen and middle age icon
-      """
+# Celebrity Name: {name}
+# Biography: {biography}
+
+# IMPORTANT RULES:
+# - Respond with only "yes" if the celebrity is globally recognized and has a massive fan base across multiple regions or demographics.
+# - Consider these factors:
+#   a) International box office success or widespread streaming popularity
+#   b) Significant cultural impact or iconic status
+#   c) Large and active social media following
+#   d) Longevity or dominance in their field
+# - Respond with "no" if the celebrity's fame is largely regional, niche, or lacks consistent global impact.
+# - Be selective, but ensure truly global icons are recognized appropriately.
+# """
+
+      popularity_prompt = f"""Comprehensive Celebrity Global Fame Assessment
+
+      Analyze the following celebrity details to determine their global recognition and significance:
+
+      Evaluation Criteria:
+      1. Global Reach and Recognition
+      2. Cultural Impact
+      3. Measurable Influence
+      4. Fan Engagement
+
+      Celebrity Name: {name}
+      Biography: {biography}
+
+      Evaluation Guidelines:
+      - Holistically assess the celebrity's global prominence
+      - Consider multiple dimensions of fame:
+        * International media presence
+        * Cross-cultural appeal
+        * Sustained career achievements
+        * Impact beyond their primary field of work
+
+      Scoring Factors:
+      a) Worldwide recognition across different continents
+      b) Substantial international media coverage
+      c) Global social media following (over 5 million combined platforms)
+      d) Breakthrough performances or achievements
+      e) Awards and critical acclaim
+      f) Influence on global pop culture
+      g) Humanitarian or philanthropic contributions
+      h) Endorsement deals and brand recognition
+      i) Longevity in their career
+      j) Ability to attract international audience/fans
+
+      Decision Process:
+      - Respond only "YES" if the celebrity demonstrates:
+        * Significant global recognition
+        * Proven impact across multiple regions
+        * Substantial fan base
+        * Notable achievements in their field
+
+      - Respond only "NO" only if:
+        * Fame is extremely limited
+        * Minimal international recognition
+        * Lack of substantial global impact
+
+      Nuanced Approach:
+      - Recognize that fame is multifaceted
+      - Consider subjective elements of cultural significance
+      - Be inclusive of diverse talents and achievements
+      - Avoid overly restrictive criteria
+
+      Provide a brief justification for your decision that highlights key global recognition factors. only response "yes" or "no" nothing else."""
       
       return popularity_prompt
