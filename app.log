@@ -5962,3 +5962,262 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-11-28 07:55:21,852 - utils.logger - INFO - Starting avatar generation with LightX...
 2024-11-28 07:55:21,852 - utils.logger - INFO - Avatar generated successfully
 2024-11-28 07:55:22,418 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-29 21:30:02,853 - utils.logger - INFO - Starting test with celebrity ID: 1245
+2024-11-29 21:30:03,311 - utils.logger - INFO - Processing celebrity: Scarlett Johansson
+2024-11-29 21:30:03,312 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/6NsMbJXRlDZuDzatN2akFdGuTvx.jpg
+2024-11-29 21:30:03,312 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 21:30:04,305 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'c48b84b7163740848ff2616105811685', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 21:30:04,305 - utils.logger - INFO - Got order ID: c48b84b7163740848ff2616105811685. Waiting for completion...
+2024-11-29 21:30:19,924 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'c48b84b7163740848ff2616105811685', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/c48b84b7163740848ff2616105811685_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 5}}
+2024-11-29 21:30:19,926 - utils.logger - INFO - Avatar generation completed
+2024-11-29 21:30:19,927 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/c48b84b7163740848ff2616105811685_1024x1024.jpg
+2024-11-29 21:30:20,577 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 21:30:20,578 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 21:30:20,578 - utils.logger - INFO - Successfully processed and saved Scarlett Johansson
+2024-11-29 21:52:51,156 - utils.logger - INFO - Starting test with celebrity ID: 1245
+2024-11-29 21:52:51,498 - utils.logger - INFO - Processing celebrity: Scarlett Johansson
+2024-11-29 21:52:51,498 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/6NsMbJXRlDZuDzatN2akFdGuTvx.jpg
+2024-11-29 21:52:51,498 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 21:52:52,348 - utils.logger - ERROR - Error generating avatar with LightX: 400 Client Error: Bad Request for url: https://api.lightxeditor.com/external/api/v1/avatar
+2024-11-29 21:52:52,349 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 21:52:52,349 - utils.logger - INFO - Successfully processed and saved Scarlett Johansson
+2024-11-29 21:53:03,968 - utils.logger - INFO - Starting test with celebrity ID: 1245
+2024-11-29 21:53:04,116 - utils.logger - INFO - Processing celebrity: Scarlett Johansson
+2024-11-29 21:53:04,116 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/6NsMbJXRlDZuDzatN2akFdGuTvx.jpg
+2024-11-29 21:53:04,116 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 21:53:04,725 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '6671af3365734a0cbf9dc6f345d0f628', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 21:53:04,726 - utils.logger - INFO - Got order ID: 6671af3365734a0cbf9dc6f345d0f628. Waiting for completion...
+2024-11-29 21:53:20,332 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '6671af3365734a0cbf9dc6f345d0f628', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/6671af3365734a0cbf9dc6f345d0f628_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 4}}
+2024-11-29 21:53:20,332 - utils.logger - INFO - Avatar generation completed
+2024-11-29 21:53:20,332 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/6671af3365734a0cbf9dc6f345d0f628_1024x1024.jpg
+2024-11-29 21:53:20,908 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 21:53:20,909 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 21:53:20,909 - utils.logger - INFO - Successfully processed and saved Scarlett Johansson
+2024-11-29 21:54:11,233 - utils.logger - INFO - Starting test with celebrity ID: 115440
+2024-11-29 21:54:11,723 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-29 21:54:11,723 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/wrPmsC9YATcnyAxvXEdGshccbqU.jpg
+2024-11-29 21:54:11,723 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 21:54:12,550 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '52639f17481640fbb4cfe4af124f6896', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 21:54:12,551 - utils.logger - INFO - Got order ID: 52639f17481640fbb4cfe4af124f6896. Waiting for completion...
+2024-11-29 21:54:28,165 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '52639f17481640fbb4cfe4af124f6896', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/52639f17481640fbb4cfe4af124f6896_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 11}}
+2024-11-29 21:54:28,166 - utils.logger - INFO - Avatar generation completed
+2024-11-29 21:54:28,167 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/52639f17481640fbb4cfe4af124f6896_1024x1024.jpg
+2024-11-29 21:54:29,013 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 21:54:29,014 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 21:54:29,014 - utils.logger - INFO - Successfully processed and saved Sydney Sweeney
+2024-11-29 21:55:08,211 - utils.logger - INFO - Starting test with celebrity ID: 18897
+2024-11-29 21:55:08,735 - utils.logger - INFO - Processing celebrity: Jackie Chan
+2024-11-29 21:55:08,735 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/nraZoTzwJQPHspAVsKfgl3RXKKa.jpg
+2024-11-29 21:55:08,735 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 21:55:09,344 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '723fd11692ad40cf8541d48b19f2c697', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 21:55:09,344 - utils.logger - INFO - Got order ID: 723fd11692ad40cf8541d48b19f2c697. Waiting for completion...
+2024-11-29 21:55:24,951 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '723fd11692ad40cf8541d48b19f2c697', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/723fd11692ad40cf8541d48b19f2c697_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 7}}
+2024-11-29 21:55:24,953 - utils.logger - INFO - Avatar generation completed
+2024-11-29 21:55:24,954 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/723fd11692ad40cf8541d48b19f2c697_1024x1024.jpg
+2024-11-29 21:55:25,551 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 21:55:25,552 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 21:55:25,552 - utils.logger - INFO - Successfully processed and saved Jackie Chan
+2024-11-29 21:55:58,737 - utils.logger - INFO - Starting test with celebrity ID: 6384
+2024-11-29 21:55:59,263 - utils.logger - INFO - Processing celebrity: Keanu Reeves
+2024-11-29 21:55:59,263 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/4D0PpNI0kmP58hgrwGC3wCjxhnm.jpg
+2024-11-29 21:55:59,263 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 21:56:00,097 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'f3e8e5936420499d9decba0c56ca815d', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 21:56:00,097 - utils.logger - INFO - Got order ID: f3e8e5936420499d9decba0c56ca815d. Waiting for completion...
+2024-11-29 21:56:15,723 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'f3e8e5936420499d9decba0c56ca815d', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/f3e8e5936420499d9decba0c56ca815d_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 5}}
+2024-11-29 21:56:15,725 - utils.logger - INFO - Avatar generation completed
+2024-11-29 21:56:15,725 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/f3e8e5936420499d9decba0c56ca815d_1024x1024.jpg
+2024-11-29 21:56:16,247 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 21:56:16,248 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 21:56:16,248 - utils.logger - INFO - Successfully processed and saved Keanu Reeves
+2024-11-29 21:57:32,230 - utils.logger - INFO - Starting test with celebrity ID: 1522703
+2024-11-29 21:57:32,882 - utils.logger - INFO - Processing celebrity: Hande Erçel
+2024-11-29 21:57:32,883 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/jrUvWNqOpfDm3D0KhbuRwQOy8Nu.jpg
+2024-11-29 21:57:32,883 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 21:57:33,839 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '64fab262bd03409cb9e38b3c442c7065', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 21:57:33,839 - utils.logger - INFO - Got order ID: 64fab262bd03409cb9e38b3c442c7065. Waiting for completion...
+2024-11-29 21:57:49,420 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '64fab262bd03409cb9e38b3c442c7065', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/64fab262bd03409cb9e38b3c442c7065_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 8}}
+2024-11-29 21:57:49,422 - utils.logger - INFO - Avatar generation completed
+2024-11-29 21:57:49,422 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/64fab262bd03409cb9e38b3c442c7065_1024x1024.jpg
+2024-11-29 21:57:51,194 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 21:57:51,195 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 21:57:51,195 - utils.logger - INFO - Successfully processed and saved Hande Erçel
+2024-11-29 21:59:08,458 - utils.logger - INFO - Starting test with celebrity ID: 1522703
+2024-11-29 21:59:09,229 - utils.logger - INFO - Processing celebrity: Hande Erçel
+2024-11-29 21:59:09,229 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/jrUvWNqOpfDm3D0KhbuRwQOy8Nu.jpg
+2024-11-29 21:59:09,229 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 21:59:09,896 - utils.logger - INFO - Initial generation response: {'status': 'FAIL', 'statusCode': 5040, 'message': '5040, API_CREDITS_CONSUMED', 'description': 'Oops, Something went wrong.', 'timestamp': 1732899550042, 'responseHash': None, 'body': None}
+2024-11-29 21:59:09,896 - utils.logger - ERROR - Avatar generation failed with status code: 5040
+2024-11-29 21:59:09,896 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 21:59:09,896 - utils.logger - INFO - Successfully processed and saved Hande Erçel
+2024-11-29 22:24:04,467 - utils.logger - INFO - Starting test with celebrity ID: 1522703
+2024-11-29 22:24:04,831 - utils.logger - INFO - Processing celebrity: Hande Erçel
+2024-11-29 22:24:04,831 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/jrUvWNqOpfDm3D0KhbuRwQOy8Nu.jpg
+2024-11-29 22:24:04,831 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:24:05,629 - utils.logger - INFO - Initial generation response: {'status': 'FAIL', 'statusCode': 5040, 'message': '5040, API_CREDITS_CONSUMED', 'description': 'Oops, Something went wrong.', 'timestamp': 1732901045769, 'responseHash': None, 'body': None}
+2024-11-29 22:24:05,630 - utils.logger - ERROR - Avatar generation failed with status code: 5040
+2024-11-29 22:24:05,632 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:24:05,633 - utils.logger - INFO - Successfully processed and saved Hande Erçel
+2024-11-29 22:24:42,896 - utils.logger - INFO - Starting test with celebrity ID: 1522703
+2024-11-29 22:24:43,060 - utils.logger - INFO - Processing celebrity: Hande Erçel
+2024-11-29 22:24:43,060 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/jrUvWNqOpfDm3D0KhbuRwQOy8Nu.jpg
+2024-11-29 22:24:43,060 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:24:43,664 - utils.logger - INFO - Initial generation response: {'status': 'FAIL', 'statusCode': 5040, 'message': '5040, API_CREDITS_CONSUMED', 'description': 'Oops, Something went wrong.', 'timestamp': 1732901083805, 'responseHash': None, 'body': None}
+2024-11-29 22:24:43,665 - utils.logger - ERROR - Avatar generation failed with status code: 5040
+2024-11-29 22:24:43,667 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:24:43,667 - utils.logger - INFO - Successfully processed and saved Hande Erçel
+2024-11-29 22:24:57,656 - utils.logger - INFO - Starting test with celebrity ID: 505710
+2024-11-29 22:24:58,020 - utils.logger - INFO - Processing celebrity: Zendaya
+2024-11-29 22:24:58,020 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/tylFh0K48CZIIhvKlA7WA1XBAtE.jpg
+2024-11-29 22:24:58,020 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:24:58,630 - utils.logger - INFO - Initial generation response: {'status': 'FAIL', 'statusCode': 5040, 'message': '5040, API_CREDITS_CONSUMED', 'description': 'Oops, Something went wrong.', 'timestamp': 1732901098771, 'responseHash': None, 'body': None}
+2024-11-29 22:24:58,631 - utils.logger - ERROR - Avatar generation failed with status code: 5040
+2024-11-29 22:24:58,632 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:24:58,632 - utils.logger - INFO - Successfully processed and saved Zendaya
+2024-11-29 22:29:03,944 - utils.logger - INFO - Starting test with celebrity ID: 505710
+2024-11-29 22:29:04,297 - utils.logger - INFO - Processing celebrity: Zendaya
+2024-11-29 22:29:04,297 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/tylFh0K48CZIIhvKlA7WA1XBAtE.jpg
+2024-11-29 22:29:04,297 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:29:04,946 - utils.logger - INFO - Initial generation response: {'status': 'FAIL', 'statusCode': 5040, 'message': '5040, API_CREDITS_CONSUMED', 'description': 'Oops, Something went wrong.', 'timestamp': 1732901345085, 'responseHash': None, 'body': None}
+2024-11-29 22:29:04,947 - utils.logger - ERROR - Avatar generation failed with status code: 5040
+2024-11-29 22:29:04,948 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:29:04,948 - utils.logger - INFO - Successfully processed and saved Zendaya
+2024-11-29 22:29:37,616 - utils.logger - INFO - Starting test with celebrity ID: 505710
+2024-11-29 22:29:37,764 - utils.logger - INFO - Processing celebrity: Zendaya
+2024-11-29 22:29:37,764 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/tylFh0K48CZIIhvKlA7WA1XBAtE.jpg
+2024-11-29 22:29:37,764 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:29:38,345 - utils.logger - INFO - Initial generation response: {'status': 'FAIL', 'statusCode': 5040, 'message': '5040, API_CREDITS_CONSUMED', 'description': 'Oops, Something went wrong.', 'timestamp': 1732901378483, 'responseHash': None, 'body': None}
+2024-11-29 22:29:38,345 - utils.logger - ERROR - Avatar generation failed with status code: 5040
+2024-11-29 22:29:38,346 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:29:38,346 - utils.logger - INFO - Successfully processed and saved Zendaya
+2024-11-29 22:30:35,078 - utils.logger - INFO - Starting test with celebrity ID: 505710
+2024-11-29 22:30:35,331 - utils.logger - INFO - Processing celebrity: Zendaya
+2024-11-29 22:30:35,331 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/tylFh0K48CZIIhvKlA7WA1XBAtE.jpg
+2024-11-29 22:30:35,331 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:30:36,281 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '8534d8beeccb4de8b6d5200806af7075', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:30:36,282 - utils.logger - INFO - Got order ID: 8534d8beeccb4de8b6d5200806af7075. Waiting for completion...
+2024-11-29 22:30:51,891 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '8534d8beeccb4de8b6d5200806af7075', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/8534d8beeccb4de8b6d5200806af7075_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 5}}
+2024-11-29 22:30:51,893 - utils.logger - INFO - Avatar generation completed
+2024-11-29 22:30:51,894 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/8534d8beeccb4de8b6d5200806af7075_1024x1024.jpg
+2024-11-29 22:30:52,594 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 22:30:52,595 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:30:52,595 - utils.logger - INFO - Successfully processed and saved Zendaya
+2024-11-29 22:35:09,019 - utils.logger - INFO - Starting test with celebrity ID: 3223
+2024-11-29 22:35:09,704 - utils.logger - INFO - Processing celebrity: Robert Downey Jr.
+2024-11-29 22:35:09,704 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg
+2024-11-29 22:35:09,704 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:35:10,404 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '42cd6983b84341cf8be9f52806ea2826', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:35:10,404 - utils.logger - INFO - Got order ID: 42cd6983b84341cf8be9f52806ea2826. Waiting for completion...
+2024-11-29 22:35:26,031 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '42cd6983b84341cf8be9f52806ea2826', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/42cd6983b84341cf8be9f52806ea2826_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 5}}
+2024-11-29 22:35:26,033 - utils.logger - INFO - Avatar generation completed
+2024-11-29 22:35:26,034 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/42cd6983b84341cf8be9f52806ea2826_1024x1024.jpg
+2024-11-29 22:35:26,848 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 22:35:26,849 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:35:26,849 - utils.logger - INFO - Successfully processed and saved Robert Downey Jr.
+2024-11-29 22:36:10,473 - utils.logger - INFO - Starting test with celebrity ID: 3223
+2024-11-29 22:36:10,898 - utils.logger - INFO - Processing celebrity: Robert Downey Jr.
+2024-11-29 22:36:10,898 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg
+2024-11-29 22:36:10,898 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:36:11,511 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '166fec9df7234fab8767e41b6a9082ea', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:36:11,511 - utils.logger - INFO - Got order ID: 166fec9df7234fab8767e41b6a9082ea. Waiting for completion...
+2024-11-29 22:36:27,121 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '166fec9df7234fab8767e41b6a9082ea', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/166fec9df7234fab8767e41b6a9082ea_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 11}}
+2024-11-29 22:36:27,122 - utils.logger - INFO - Avatar generation completed
+2024-11-29 22:36:27,122 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/166fec9df7234fab8767e41b6a9082ea_1024x1024.jpg
+2024-11-29 22:36:27,653 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 22:36:27,654 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:36:27,654 - utils.logger - INFO - Successfully processed and saved Robert Downey Jr.
+2024-11-29 22:36:57,856 - utils.logger - INFO - Starting test with celebrity ID: 125025
+2024-11-29 22:36:58,553 - utils.logger - INFO - Processing celebrity: Joey King
+2024-11-29 22:36:58,553 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/td1mTuzaajIzN9EjK5Bd6ly6WBO.jpg
+2024-11-29 22:36:58,553 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:36:59,275 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '5c85007b92c84bcabf5ce007a59d75f1', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:36:59,275 - utils.logger - INFO - Got order ID: 5c85007b92c84bcabf5ce007a59d75f1. Waiting for completion...
+2024-11-29 22:37:14,912 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '5c85007b92c84bcabf5ce007a59d75f1', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/5c85007b92c84bcabf5ce007a59d75f1_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 5}}
+2024-11-29 22:37:14,915 - utils.logger - INFO - Avatar generation completed
+2024-11-29 22:37:14,915 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/5c85007b92c84bcabf5ce007a59d75f1_1024x1024.jpg
+2024-11-29 22:37:16,692 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 22:37:16,693 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:37:16,693 - utils.logger - INFO - Successfully processed and saved Joey King
+2024-11-29 22:38:59,092 - utils.logger - INFO - Starting test with celebrity ID: 90633
+2024-11-29 22:38:59,656 - utils.logger - INFO - Processing celebrity: Gal Gadot
+2024-11-29 22:38:59,656 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/AbXKtWQwuDiwhoQLh34VRglwuBE.jpg
+2024-11-29 22:38:59,656 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:39:00,417 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '96fd079e8acf4841ac6b6f41390957c2', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:39:00,418 - utils.logger - INFO - Got order ID: 96fd079e8acf4841ac6b6f41390957c2. Waiting for completion...
+2024-11-29 22:39:16,074 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '96fd079e8acf4841ac6b6f41390957c2', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/96fd079e8acf4841ac6b6f41390957c2_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 6}}
+2024-11-29 22:39:16,077 - utils.logger - INFO - Avatar generation completed
+2024-11-29 22:39:16,077 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/96fd079e8acf4841ac6b6f41390957c2_1024x1024.jpg
+2024-11-29 22:39:16,770 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 22:39:16,770 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:39:16,771 - utils.logger - INFO - Successfully processed and saved Gal Gadot
+2024-11-29 22:41:45,136 - utils.logger - INFO - Starting test with celebrity ID: 2037
+2024-11-29 22:41:45,620 - utils.logger - INFO - Processing celebrity: Cillian Murphy
+2024-11-29 22:41:45,620 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/ycZpLjHxsNPvsB6ndu2D9qsx94X.jpg
+2024-11-29 22:41:45,620 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:41:46,452 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '1738c6584e884e989a0f949e12f6937b', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:41:46,453 - utils.logger - INFO - Got order ID: 1738c6584e884e989a0f949e12f6937b. Waiting for completion...
+2024-11-29 22:42:02,060 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '1738c6584e884e989a0f949e12f6937b', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/1738c6584e884e989a0f949e12f6937b_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 8}}
+2024-11-29 22:42:02,061 - utils.logger - INFO - Avatar generation completed
+2024-11-29 22:42:02,062 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/1738c6584e884e989a0f949e12f6937b_1024x1024.jpg
+2024-11-29 22:42:03,895 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 22:42:03,896 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:42:03,896 - utils.logger - INFO - Successfully processed and saved Cillian Murphy
+2024-11-29 22:43:12,899 - utils.logger - INFO - Starting test with celebrity ID: 2037
+2024-11-29 22:43:13,545 - utils.logger - INFO - Processing celebrity: Cillian Murphy
+2024-11-29 22:43:13,545 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/ycZpLjHxsNPvsB6ndu2D9qsx94X.jpg
+2024-11-29 22:43:13,545 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:43:14,322 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'af9b1b67b1fb47b2bedee24b8ccf1327', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:43:14,322 - utils.logger - INFO - Got order ID: af9b1b67b1fb47b2bedee24b8ccf1327. Waiting for completion...
+2024-11-29 22:43:29,926 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'af9b1b67b1fb47b2bedee24b8ccf1327', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/af9b1b67b1fb47b2bedee24b8ccf1327_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 4}}
+2024-11-29 22:43:29,928 - utils.logger - INFO - Avatar generation completed
+2024-11-29 22:43:29,929 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/af9b1b67b1fb47b2bedee24b8ccf1327_1024x1024.jpg
+2024-11-29 22:43:30,527 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 22:43:30,528 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:43:30,529 - utils.logger - INFO - Successfully processed and saved Cillian Murphy
+2024-11-29 22:53:26,639 - utils.logger - INFO - Starting test with celebrity ID: 226001
+2024-11-29 22:53:27,093 - utils.logger - INFO - Processing celebrity: Ariana Grande
+2024-11-29 22:53:27,093 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/cslFyOh3sTWDeWXgsxmjJ1uqE0P.jpg
+2024-11-29 22:53:27,093 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:53:27,839 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '09e8f9bc66204c3982468c945a66e207', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:53:27,840 - utils.logger - INFO - Got order ID: 09e8f9bc66204c3982468c945a66e207. Waiting for completion...
+2024-11-29 22:53:43,420 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '09e8f9bc66204c3982468c945a66e207', 'status': 'init', 'output': None, 'mask': None, 'queuedAt': None, 'generatedTime': 0}}
+2024-11-29 22:53:43,422 - utils.logger - INFO - Status: init. Waiting...
+2024-11-29 22:53:59,075 - utils.logger - INFO - Status check attempt 2: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '09e8f9bc66204c3982468c945a66e207', 'status': 'init', 'output': None, 'mask': None, 'queuedAt': None, 'generatedTime': 0}}
+2024-11-29 22:53:59,077 - utils.logger - INFO - Status: init. Waiting...
+2024-11-29 22:54:14,679 - utils.logger - INFO - Status check attempt 3: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '09e8f9bc66204c3982468c945a66e207', 'status': 'init', 'output': None, 'mask': None, 'queuedAt': None, 'generatedTime': 0}}
+2024-11-29 22:54:14,682 - utils.logger - INFO - Status: init. Waiting...
+2024-11-29 22:54:23,630 - utils.logger - INFO - Starting test with celebrity ID: 226001
+2024-11-29 22:54:23,774 - utils.logger - INFO - Processing celebrity: Ariana Grande
+2024-11-29 22:54:23,774 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/cslFyOh3sTWDeWXgsxmjJ1uqE0P.jpg
+2024-11-29 22:54:23,774 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:54:24,390 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'deb19539c678406b8bc50f674bc931da', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:54:24,391 - utils.logger - INFO - Got order ID: deb19539c678406b8bc50f674bc931da. Waiting for completion...
+2024-11-29 22:54:40,067 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'deb19539c678406b8bc50f674bc931da', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/deb19539c678406b8bc50f674bc931da_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 8}}
+2024-11-29 22:54:40,069 - utils.logger - INFO - Avatar generation completed
+2024-11-29 22:54:40,070 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/deb19539c678406b8bc50f674bc931da_1024x1024.jpg
+2024-11-29 22:54:40,649 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 22:54:40,650 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:54:40,650 - utils.logger - INFO - Successfully processed and saved Ariana Grande
+2024-11-29 22:56:07,584 - utils.logger - INFO - Starting test with celebrity ID: 2520942
+2024-11-29 22:56:08,196 - utils.logger - INFO - Processing celebrity: Chloe Van Landschoot
+2024-11-29 22:56:08,196 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/9sQDQxKcp0UAl5nKfeoHwcn3eGs.jpg
+2024-11-29 22:56:08,196 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:56:08,925 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'abf81ed44e7d476d9b945c9f0184b136', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:56:08,925 - utils.logger - INFO - Got order ID: abf81ed44e7d476d9b945c9f0184b136. Waiting for completion...
+2024-11-29 22:56:24,528 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'abf81ed44e7d476d9b945c9f0184b136', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/abf81ed44e7d476d9b945c9f0184b136_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 6}}
+2024-11-29 22:56:24,530 - utils.logger - INFO - Avatar generation completed
+2024-11-29 22:56:24,531 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/abf81ed44e7d476d9b945c9f0184b136_1024x1024.jpg
+2024-11-29 22:56:25,260 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 22:56:25,261 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:56:25,261 - utils.logger - INFO - Successfully processed and saved Chloe Van Landschoot
+2024-11-29 22:58:46,193 - utils.logger - INFO - Starting test with celebrity ID: 10980
+2024-11-29 22:58:46,741 - utils.logger - INFO - Processing celebrity: Daniel Radcliffe
+2024-11-29 22:58:46,741 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/iPg0J9UzAlPj1fLEJNllpW9IhGe.jpg
+2024-11-29 22:58:46,741 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 22:58:47,554 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'aa42c748d09649cdbf9fc24b0fbe856d', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 22:58:47,555 - utils.logger - INFO - Got order ID: aa42c748d09649cdbf9fc24b0fbe856d. Waiting for completion...
+2024-11-29 22:59:03,182 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'aa42c748d09649cdbf9fc24b0fbe856d', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/aa42c748d09649cdbf9fc24b0fbe856d_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 6}}
+2024-11-29 22:59:03,184 - utils.logger - INFO - Avatar generation completed
+2024-11-29 22:59:03,184 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/aa42c748d09649cdbf9fc24b0fbe856d_1024x1024.jpg
+2024-11-29 22:59:05,025 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 22:59:05,026 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 22:59:05,026 - utils.logger - INFO - Successfully processed and saved Daniel Radcliffe

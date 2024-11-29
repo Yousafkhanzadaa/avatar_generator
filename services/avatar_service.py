@@ -73,8 +73,9 @@ class LightXAvatarService:
             # Prepare the payload for avatar generation
             payload = {
                 "imageUrl": image_url,
-                "styleImageUrl": "https://d2v5dzhdg4zhx3.cloudfront.net/ai_avatar_styles_thumbs/male/anime.jpg",
-                "textPrompt": "Anime"
+                "styleImageUrl": "",
+                "textPrompt": "Photorealistic high-resolution portrait of Daniel Radcliffe, professional studio headshot with precise facial details, accurate skin texture, and true-to-life facial features, soft diffused studio lighting minimizing harsh shadows, neutral background, DSLR-quality image with shallow depth of field, capturing subject's signature facial structure and expression, smart casual attire, balanced color grading, natural skin tones, minimal post-processing, shot from slightly elevated angle to enhance facial symmetry, lighting emphasizing cheekbones and facial contours, maintaining original subject's distinctive characteristics."
+                # "textPrompt": "A high-quality professional headshot portrait of a celebrity precise facial details, soft studio lighting, neutral background, and crisp image quality, capturing a confident yet natural expression with true-to-life skin tones, shot on a professional DSLR with shallow depth of field, showcasing shoulders and smart casual attire, maintaining a balanced, flattering composition that emphasizes facial features with minimal post-processing and a subtle, professional smile."
             }
 
             # Initialize avatar generation
