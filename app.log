@@ -6221,3 +6221,73 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-11-29 22:59:05,025 - utils.logger - INFO - Successfully converted avatar to base64
 2024-11-29 22:59:05,026 - utils.logger - INFO - Avatar generated successfully
 2024-11-29 22:59:05,026 - utils.logger - INFO - Successfully processed and saved Daniel Radcliffe
+2024-11-29 23:22:43,716 - utils.logger - INFO - Fetched page 2 of celebrities
+2024-11-29 23:22:45,092 - utils.logger - INFO - Fetched page 3 of celebrities
+2024-11-29 23:22:46,475 - utils.logger - INFO - Processing celebrity: Jason Statham
+2024-11-29 23:22:46,475 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/8FMhYekyLR4ibHQ9Kpuaqe4cVjL.jpg
+2024-11-29 23:22:46,476 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 23:22:47,383 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'cca38b27cd8849f6840f7db3f4e93245', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 23:22:47,384 - utils.logger - INFO - Got order ID: cca38b27cd8849f6840f7db3f4e93245. Waiting for completion...
+2024-11-29 23:23:02,990 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'cca38b27cd8849f6840f7db3f4e93245', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/cca38b27cd8849f6840f7db3f4e93245_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 7}}
+2024-11-29 23:23:02,992 - utils.logger - INFO - Avatar generation completed
+2024-11-29 23:23:02,992 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/cca38b27cd8849f6840f7db3f4e93245_1024x1024.jpg
+2024-11-29 23:23:03,577 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 23:23:03,578 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 23:23:07,856 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-29 23:23:15,690 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-29 23:23:16,664 - utils.logger - INFO - Successfully processed and saved Jason Statham
+2024-11-29 23:23:17,032 - utils.logger - INFO - Processing celebrity: Philip Froissant
+2024-11-29 23:23:17,032 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/6MJSTB3VTgC4Kj3QjcQGYuvQ7Ak.jpg
+2024-11-29 23:23:17,032 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 23:23:17,651 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'a97f6d2e6fab4a2dacaa6c1413b4f9f1', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 23:23:17,652 - utils.logger - INFO - Got order ID: a97f6d2e6fab4a2dacaa6c1413b4f9f1. Waiting for completion...
+2024-11-29 23:23:33,262 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'a97f6d2e6fab4a2dacaa6c1413b4f9f1', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/a97f6d2e6fab4a2dacaa6c1413b4f9f1_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 5}}
+2024-11-29 23:23:33,263 - utils.logger - INFO - Avatar generation completed
+2024-11-29 23:23:33,263 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/a97f6d2e6fab4a2dacaa6c1413b4f9f1_1024x1024.jpg
+2024-11-29 23:23:33,796 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 23:23:33,798 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 23:23:37,275 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-29 23:23:37,424 - utils.logger - INFO - Processing celebrity: Dyessa Garcia
+2024-11-29 23:23:37,425 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/xak9L0fkIOkjSwJpz3SWLl94tVP.jpg
+2024-11-29 23:23:37,425 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 23:23:38,029 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'bc80548985b04131a79c9e1914fc92e2', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 23:23:38,030 - utils.logger - INFO - Got order ID: bc80548985b04131a79c9e1914fc92e2. Waiting for completion...
+2024-11-29 23:23:53,620 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'bc80548985b04131a79c9e1914fc92e2', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/bc80548985b04131a79c9e1914fc92e2_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 8}}
+2024-11-29 23:23:53,622 - utils.logger - INFO - Avatar generation completed
+2024-11-29 23:23:53,623 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/bc80548985b04131a79c9e1914fc92e2_1024x1024.jpg
+2024-11-29 23:23:54,422 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 23:23:54,424 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 23:23:56,108 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-29 23:23:56,261 - utils.logger - INFO - Processing celebrity: Sydney Sweeney
+2024-11-29 23:23:56,261 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/wrPmsC9YATcnyAxvXEdGshccbqU.jpg
+2024-11-29 23:23:56,262 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 23:23:56,879 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '9160895a7755405bb41fcfcb8759c1dd', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 23:23:56,880 - utils.logger - INFO - Got order ID: 9160895a7755405bb41fcfcb8759c1dd. Waiting for completion...
+2024-11-29 23:24:12,581 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '9160895a7755405bb41fcfcb8759c1dd', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/9160895a7755405bb41fcfcb8759c1dd_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 4}}
+2024-11-29 23:24:12,583 - utils.logger - INFO - Avatar generation completed
+2024-11-29 23:24:12,583 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/9160895a7755405bb41fcfcb8759c1dd_1024x1024.jpg
+2024-11-29 23:24:13,097 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-29 23:24:13,098 - utils.logger - INFO - Avatar generated successfully
+2024-11-29 23:24:14,470 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-29 23:24:21,734 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-29 23:24:22,367 - utils.logger - INFO - Successfully processed and saved Sydney Sweeney
+2024-11-29 23:24:22,819 - utils.logger - INFO - Processing celebrity: Alexandra Daddario
+2024-11-29 23:24:22,819 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/nVznarxjPgR2JtMUBNl7TRxqTqH.jpg
+2024-11-29 23:24:22,819 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-29 23:24:23,485 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '2fb60ea4ba1640aeac2dcb89e0f4841b', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-29 23:24:23,485 - utils.logger - INFO - Got order ID: 2fb60ea4ba1640aeac2dcb89e0f4841b. Waiting for completion...
+2024-11-30 00:45:45,346 - utils.logger - INFO - Starting test with celebrity ID: 10980
+2024-11-30 00:45:47,586 - utils.logger - INFO - Processing celebrity: Daniel Radcliffe
+2024-11-30 00:45:49,608 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-30 00:45:49,617 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/iPg0J9UzAlPj1fLEJNllpW9IhGe.jpg
+2024-11-30 00:45:49,617 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-30 00:45:52,272 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '84ca6d3d19d14ebe9905bacc47b9351b', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-30 00:45:52,273 - utils.logger - INFO - Got order ID: 84ca6d3d19d14ebe9905bacc47b9351b. Waiting for completion...
+2024-11-30 00:46:09,579 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': '84ca6d3d19d14ebe9905bacc47b9351b', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/84ca6d3d19d14ebe9905bacc47b9351b_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 5}}
+2024-11-30 00:46:09,581 - utils.logger - INFO - Avatar generation completed
+2024-11-30 00:46:09,581 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/84ca6d3d19d14ebe9905bacc47b9351b_1024x1024.jpg
+2024-11-30 00:46:15,717 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-30 00:46:15,717 - utils.logger - ERROR - Error encoding image to base64: name 'base64_image' is not defined
+2024-11-30 00:46:15,718 - utils.logger - INFO - Avatar generated successfully
+2024-11-30 00:46:33,875 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-30 00:46:42,730 - utils.logger - INFO - Successfully processed and saved Daniel Radcliffe

@@ -5,6 +5,7 @@ import time
 from config.settings import Settings
 from utils.logger import logger
 from utils.image_utils import encode_image_to_base64
+from utils.image_utils import reseize_base64_Image
 from io import BytesIO
 import base64
 
@@ -67,14 +68,14 @@ class LightXAvatarService:
         logger.error("Max retries reached while checking order status")
         return None
 
-    def generate_avatar(self, image_url):
+    def generate_avatar(self, image_url, celeb_name):
         """Generate avatar using LightX API"""
         try:
             # Prepare the payload for avatar generation
             payload = {
                 "imageUrl": image_url,
                 "styleImageUrl": "",
-                "textPrompt": "Photorealistic high-resolution portrait of Daniel Radcliffe, professional studio headshot with precise facial details, accurate skin texture, and true-to-life facial features, soft diffused studio lighting minimizing harsh shadows, neutral background, DSLR-quality image with shallow depth of field, capturing subject's signature facial structure and expression, smart casual attire, balanced color grading, natural skin tones, minimal post-processing, shot from slightly elevated angle to enhance facial symmetry, lighting emphasizing cheekbones and facial contours, maintaining original subject's distinctive characteristics."
+                "textPrompt": f"Photorealistic high-resolution portrait of {celeb_name}, professional studio headshot with precise facial details, accurate skin texture, and true-to-life facial features, soft diffused studio lighting minimizing harsh shadows, neutral background, DSLR-quality image with shallow depth of field, capturing subject's signature facial structure and expression, smart casual attire, balanced color grading, natural skin tones, minimal post-processing, shot from slightly elevated angle to enhance facial symmetry, lighting emphasizing cheekbones and facial contours, maintaining original subject's distinctive characteristics."
                 # "textPrompt": "A high-quality professional headshot portrait of a celebrity precise facial details, soft studio lighting, neutral background, and crisp image quality, capturing a confident yet natural expression with true-to-life skin tones, shot on a professional DSLR with shallow depth of field, showcasing shoulders and smart casual attire, maintaining a balanced, flattering composition that emphasizes facial features with minimal post-processing and a subtle, professional smile."
             }
 
@@ -129,6 +130,7 @@ class LightXAvatarService:
                 base64_data = self._convert_to_base64(image_data)
                 if base64_data:
                     logger.info("Successfully converted avatar to base64")
+                    resized_base64 = reseize_base64_Image(base64_data)
                     return base64_data
                 
                 return None
