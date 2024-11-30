@@ -6462,3 +6462,17 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-11-30 04:19:46,352 - utils.logger - INFO - Avatar generated successfully
 2024-11-30 04:19:56,829 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-11-30 04:19:58,669 - utils.logger - INFO - Successfully processed and saved Monica Bellucci
+2024-11-30 05:20:15,551 - utils.logger - INFO - Starting test with celebrity ID: 1001657
+2024-11-30 05:20:15,934 - utils.logger - INFO - Processing celebrity: Sophie Turner
+2024-11-30 05:20:17,620 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-30 05:20:17,627 - utils.logger - INFO - Found image URL: https://image.tmdb.org/t/p/w500/8ur4aHFakVCinWk0cvrGO8qAUhv.jpg
+2024-11-30 05:20:17,627 - utils.logger - INFO - Starting avatar generation with LightX...
+2024-11-30 05:20:18,309 - utils.logger - INFO - Initial generation response: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'cb00ae471ab545b6b4e20dcd0f0c4664', 'maxRetriesAllowed': 5, 'avgResponseTimeInSec': 15, 'status': 'init'}}
+2024-11-30 05:20:18,309 - utils.logger - INFO - Got order ID: cb00ae471ab545b6b4e20dcd0f0c4664. Waiting for completion...
+2024-11-30 05:20:33,907 - utils.logger - INFO - Status check attempt 1: {'statusCode': 2000, 'message': 'SUCCESS', 'body': {'orderId': 'cb00ae471ab545b6b4e20dcd0f0c4664', 'status': 'active', 'output': 'https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/cb00ae471ab545b6b4e20dcd0f0c4664_1024x1024.jpg', 'mask': None, 'queuedAt': None, 'generatedTime': 4}}
+2024-11-30 05:20:33,910 - utils.logger - INFO - Avatar generation completed
+2024-11-30 05:20:33,910 - utils.logger - INFO - Downloading avatar from: https://d3aa3s3yhl0emm.cloudfront.net/output/lx/avatarify/cb00ae471ab545b6b4e20dcd0f0c4664_1024x1024.jpg
+2024-11-30 05:20:35,037 - utils.logger - INFO - Successfully converted avatar to base64
+2024-11-30 05:20:35,037 - utils.logger - INFO - Avatar generated successfully
+2024-11-30 05:20:48,037 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-30 05:20:50,236 - utils.logger - INFO - Successfully processed and saved Sophie Turner

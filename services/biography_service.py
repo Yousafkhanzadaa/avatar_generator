@@ -99,7 +99,8 @@ class BiographyService:
         return f"""
         Transform this celebrity's biography into a creative, fictional narrative.
         Original details:
-        - Career field: Actor/Actress
+        - Career field: Celebrity
+        - Name: {name}
         - Era active: {birthday}
         - Original bio excerpt: {original_bio}...
 
