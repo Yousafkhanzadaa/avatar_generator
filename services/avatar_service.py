@@ -8,6 +8,7 @@ from utils.image_utils import encode_image_to_base64
 from utils.image_utils import reseize_base64_Image
 from io import BytesIO
 import base64
+import random
 
 class LightXAvatarService:
     def __init__(self):
@@ -16,6 +17,17 @@ class LightXAvatarService:
             'x-api-key': Settings.LIGHTX_API_KEY
         }
         
+        self.prompt_templates = [
+            # Original ethereal style
+            """Ethereal portrait of {celeb_name}, their face emerging from a dreamlike composition that blends reality and imagination. Soft, dynamic brushstrokes capture their distinctive features - expressive eyes and sculpted cheekbones. Their image transforms between photorealistic detail and artistic abstraction, with fluid color transitions and unexpected textural elements. The expression is both introspective and powerful, suspended in a moment of artistic revelation. Blend of surreal and realistic styling, emphasizing their multifaceted artistic persona.""",
+            
+            #Professional
+            """Photorealistic high-resolution portrait of {celeb_name}, professional studio headshot with precise facial details, accurate skin texture, and true-to-life facial features, soft diffused studio lighting minimizing harsh shadows, neutral background, DSLR-quality image with shallow depth of field, capturing subject's signature facial structure and expression, smart casual attire, balanced color grading, natural skin tones, minimal post-processing, shot from slightly elevated angle to enhance facial symmetry, lighting emphasizing cheekbones and facial contours, maintaining original subject's distinctive characteristics.""",
+            
+            # Pop art modern style
+            """Bold pop art interpretation of {celeb_name}, exploding with vibrant colors and graphic elements. Their portrait divided into dynamic color blocks with halftone dot patterns and comic-book inspired styling. Strong outlines and unexpected color combinations create a striking visual impact.  Incorporating playful geometric shapes and patterns that complement their features. Modern, energetic composition that captures their iconic status through contemporary art lens."""
+    ]
+    
     def _convert_to_base64(self, image_data):
         """Convert BytesIO image data to base64 string"""
         try:
@@ -72,13 +84,14 @@ class LightXAvatarService:
         """Generate avatar using LightX API"""
         try:
             # Prepare the payload for avatar generation
+            selected_prompt = random.choice(self.prompt_templates)
+            formatted_prompt = selected_prompt.format(celeb_name=celeb_name)
+            
+            logger.info(f"Selected prompt style for {celeb_name}: {formatted_prompt[:50]}...")
             payload = {
                 "imageUrl": image_url,
                 "styleImageUrl": "",
-                "textPrompt": f"""Ethereal portrait of {celeb_name}, their face emerging from a dreamlike composition that blends reality and imagination. Soft, dynamic brushstrokes capture their distinctive features - expressive eyes and sculpted cheekbones. Their image transforms between photorealistic detail and artistic abstraction, with fluid color transitions and unexpected textural elements. The expression is both introspective and powerful, suspended in a moment of artistic revelation. Blend of surreal and realistic styling, emphasizing their multifaceted artistic persona."""
-                # "textPrompt": f"""Ethereal portrait of {celeb_name}, her face emerging from a dreamlike composition that blends reality and imagination. Soft, dynamic brushstrokes capture her distinctive features - expressive eyes and sculpted cheekbones. Her image transforms between photorealistic detail and artistic abstraction, with fluid color transitions and unexpected textural elements. Her expression is both introspective and powerful, suspended in a moment of artistic revelation. Blend of surreal and realistic styling, emphasizing her multifaceted artistic persona."""
-                # "textPrompt": f"Photorealistic high-resolution portrait of {celeb_name}, professional studio headshot with precise facial details, accurate skin texture, and true-to-life facial features, soft diffused studio lighting minimizing harsh shadows, neutral background, DSLR-quality image with shallow depth of field, capturing subject's signature facial structure and expression, smart casual attire, balanced color grading, natural skin tones, minimal post-processing, shot from slightly elevated angle to enhance facial symmetry, lighting emphasizing cheekbones and facial contours, maintaining original subject's distinctive characteristics."
-                # "textPrompt": "A high-quality professional headshot portrait of a celebrity precise facial details, soft studio lighting, neutral background, and crisp image quality, capturing a confident yet natural expression with true-to-life skin tones, shot on a professional DSLR with shallow depth of field, showcasing shoulders and smart casual attire, maintaining a balanced, flattering composition that emphasizes facial features with minimal post-processing and a subtle, professional smile."
+                "textPrompt": formatted_prompt
             }
 
             # Initialize avatar generation

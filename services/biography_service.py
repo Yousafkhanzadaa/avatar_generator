@@ -8,14 +8,45 @@ client = OpenAI(api_key=Settings.OPENAI_API_KEY)
 class BiographyService:
     # def __init__(self):
     #     openai.api_key = Settings.OPENAI_API_KEY
-    def generate_creative_biography(self, celebrity_data):
+    
+    def transform_name(self, original_name):
+        """
+        Uses OpenAI to transform a celebrity name into an AI-safe alternative.
+        """
+        try:
+            prompt = self._create_name_transform_prompt(original_name)
+            
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[{
+                    "role": "system",
+                    "content": """You are a virtual world name creator. Transform real names 
+                    into metaverse-inspired personas that capture the essence of the original 
+                    while placing them firmly in a digital reality. Create names that sound 
+                    like they belong to virtual influencers or digital beings."""
+                }, {
+                    "role": "user",
+                    "content": prompt
+                }],
+                temperature=0.7,
+                max_tokens=20
+            )
+            
+            return response.choices[0].message.content.strip()
+            
+        except Exception as e:
+            logger.error(f"Error transforming name: {str(e)}")
+            return f"Digital{original_name.split()[0]}"
+    
+    
+    def generate_creative_biography(self, celebrity_data, transformed_name):
         """
         Generates a creative, fictionalized biography based on the celebrity's real information.
         Maintains the essence of their career while creating an imaginative narrative.
         """
         try:
             # Create a detailed prompt that captures key aspects while encouraging creativity
-            prompt = self._create_biography_prompt(celebrity_data)
+            prompt = self._create_biography_prompt(celebrity_data, transformed_name)
             
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
@@ -31,7 +62,7 @@ class BiographyService:
                     "content": prompt
                 }],
                 temperature=0.6,
-                max_tokens=500
+                max_tokens=600
             )
             
             return response.choices[0].message.content.strip()
@@ -83,12 +114,13 @@ class BiographyService:
           logger.error(f"Error checking celebrity global popularity: {str(e)}")
           return "no"
 
-    def _create_biography_prompt(self, celebrity_data):
+    def _create_biography_prompt(self, celebrity_data, transformed_name):
         """
         Creates a detailed prompt for the GPT model based on celebrity data.
         """
         name = celebrity_data['name']
         # known_for = celebrity_data['known_for']
+        new_name = transformed_name
         original_bio = celebrity_data['biography']
         birthday = celebrity_data['birthday']
 
@@ -102,7 +134,7 @@ class BiographyService:
         - Career field: Celebrity
         - Name: {name}
         - Era active: {birthday}
-        - Original bio excerpt: {original_bio}...
+        - Original bio excerpt: {original_bio}
 
         Create a whimsical, engaging biography that:
         1. Transforms their career journey into a metaphorical adventure
@@ -111,6 +143,8 @@ class BiographyService:
         4. Avoids direct references to real movies, shows, or people
         5. Uses creative storytelling devices (metaphors, allegories)
         6. Maintains a sense of wonder and inspiration
+        7. Avoids direct references to real celebrity
+        8. DO NOT use name of the Celebrity
         
         The biography should feel like a magical realism story while subtly reflecting 
         their real career path and achievements.
@@ -135,24 +169,24 @@ class BiographyService:
       popularity = celebrity_data['popularity']
 
       # Prompt designed to evaluate global popularity and teen appeal
-#       popularity_prompt = f"""
-# Analyze the following celebrity details and determine if they meet the criteria for:
-# 1. EXTREME global fame (worldwide recognition)
-# 2. MASSIVE fan following
+      #       popularity_prompt = f"""
+      # Analyze the following celebrity details and determine if they meet the criteria for:
+      # 1. EXTREME global fame (worldwide recognition)
+      # 2. MASSIVE fan following
 
-# Celebrity Name: {name}
-# Biography: {biography}
+      # Celebrity Name: {name}
+      # Biography: {biography}
 
-# IMPORTANT RULES:
-# - Respond with only "yes" if the celebrity is globally recognized and has a massive fan base across multiple regions or demographics.
-# - Consider these factors:
-#   a) International box office success or widespread streaming popularity
-#   b) Significant cultural impact or iconic status
-#   c) Large and active social media following
-#   d) Longevity or dominance in their field
-# - Respond with "no" if the celebrity's fame is largely regional, niche, or lacks consistent global impact.
-# - Be selective, but ensure truly global icons are recognized appropriately.
-# """
+      # IMPORTANT RULES:
+      # - Respond with only "yes" if the celebrity is globally recognized and has a massive fan base across multiple regions or demographics.
+      # - Consider these factors:
+      #   a) International box office success or widespread streaming popularity
+      #   b) Significant cultural impact or iconic status
+      #   c) Large and active social media following
+      #   d) Longevity or dominance in their field
+      # - Respond with "no" if the celebrity's fame is largely regional, niche, or lacks consistent global impact.
+      # - Be selective, but ensure truly global icons are recognized appropriately.
+      # """
 
       popularity_prompt = f"""Comprehensive Celebrity Global Fame Assessment
 
@@ -208,3 +242,30 @@ class BiographyService:
       Provide a brief justification for your decision that highlights key global recognition factors. only response "yes" or "no" nothing else."""
       
       return popularity_prompt
+    
+    def _create_name_transform_prompt(self, original_name):
+        """
+        Creates a prompt for AI name transformation.
+        """
+        first_name = original_name.split()[0]
+        return f"""Create a completely original AI chatbot name for {original_name} and it must not be similar:
+
+              MUST:
+              - Be 100% original creation
+              - Use generic personality traits only
+              - Be family-friendly and non-controversial
+
+              LENGTH:
+              - Maximum 2-3 words total
+              - Keep it short and clear
+
+              FORBIDDEN:
+              - No celebrity references
+              - No character references
+              - No trademarked terms
+              - No suggestive content
+              - No copycat elements
+              - No pop culture references
+
+              Focus on creating something completely new that describes a personality.
+              Only respond with the new name, nothing else."""
