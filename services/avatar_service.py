@@ -75,7 +75,9 @@ class LightXAvatarService:
             payload = {
                 "imageUrl": image_url,
                 "styleImageUrl": "",
-                "textPrompt": f"Photorealistic high-resolution portrait of {celeb_name}, professional studio headshot with precise facial details, accurate skin texture, and true-to-life facial features, soft diffused studio lighting minimizing harsh shadows, neutral background, DSLR-quality image with shallow depth of field, capturing subject's signature facial structure and expression, smart casual attire, balanced color grading, natural skin tones, minimal post-processing, shot from slightly elevated angle to enhance facial symmetry, lighting emphasizing cheekbones and facial contours, maintaining original subject's distinctive characteristics."
+                "textPrompt": f"""Ethereal portrait of {celeb_name}, their face emerging from a dreamlike composition that blends reality and imagination. Soft, dynamic brushstrokes capture their distinctive features - expressive eyes and sculpted cheekbones. Their image transforms between photorealistic detail and artistic abstraction, with fluid color transitions and unexpected textural elements. The expression is both introspective and powerful, suspended in a moment of artistic revelation. Blend of surreal and realistic styling, emphasizing their multifaceted artistic persona."""
+                # "textPrompt": f"""Ethereal portrait of {celeb_name}, her face emerging from a dreamlike composition that blends reality and imagination. Soft, dynamic brushstrokes capture her distinctive features - expressive eyes and sculpted cheekbones. Her image transforms between photorealistic detail and artistic abstraction, with fluid color transitions and unexpected textural elements. Her expression is both introspective and powerful, suspended in a moment of artistic revelation. Blend of surreal and realistic styling, emphasizing her multifaceted artistic persona."""
+                # "textPrompt": f"Photorealistic high-resolution portrait of {celeb_name}, professional studio headshot with precise facial details, accurate skin texture, and true-to-life facial features, soft diffused studio lighting minimizing harsh shadows, neutral background, DSLR-quality image with shallow depth of field, capturing subject's signature facial structure and expression, smart casual attire, balanced color grading, natural skin tones, minimal post-processing, shot from slightly elevated angle to enhance facial symmetry, lighting emphasizing cheekbones and facial contours, maintaining original subject's distinctive characteristics."
                 # "textPrompt": "A high-quality professional headshot portrait of a celebrity precise facial details, soft studio lighting, neutral background, and crisp image quality, capturing a confident yet natural expression with true-to-life skin tones, shot on a professional DSLR with shallow depth of field, showcasing shoulders and smart casual attire, maintaining a balanced, flattering composition that emphasizes facial features with minimal post-processing and a subtle, professional smile."
             }
 
@@ -128,10 +130,10 @@ class LightXAvatarService:
                 
                 # Convert to base64
                 base64_data = self._convert_to_base64(image_data)
-                if base64_data:
+                resized_base64 = reseize_base64_Image(base64_data)
+                if resized_base64:
                     logger.info("Successfully converted avatar to base64")
-                    resized_base64 = reseize_base64_Image(base64_data)
-                    return base64_data
+                    return resized_base64
                 
                 return None
             else:

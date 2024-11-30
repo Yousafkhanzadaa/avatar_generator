@@ -39,7 +39,7 @@ def reseize_base64_Image(base64_img):
       image_data = base64.b64decode(base64_img)
 
       # Open the image using Pillow
-      image = Image.open(io.BytesIO(image_data))
+      image = Image.open(BytesIO(image_data))
 
       # Calculate the new size preserving aspect ratio
       width, height = image.size
@@ -54,11 +54,13 @@ def reseize_base64_Image(base64_img):
       resized_image = image.resize((new_width, new_height), Image.LANCZOS)
 
       # Save the resized image to a bytes buffer
-      buffered = io.BytesIO()
+      buffered = BytesIO()
       resized_image.save(buffered, format="jpeg")
 
       # Encode the resized image back to Base64
       resized_base64 = base64.b64encode(buffered.getvalue()).decode('utf-8')
+      
+      return resized_base64
     except Exception as e:
         logger.error(f"Error encoding image to base64: {str(e)}")
         return None
