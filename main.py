@@ -2,6 +2,7 @@ from config.settings import Settings
 from database.mongodb import MongoDB
 from services.tmdb_service import TMDBService
 from services.avatar_service import LightXAvatarService
+from services.biography_service import BiographyService
 from models.celebrity import Celebrity
 from utils.logger import logger
 from utils.image_utils import download_image
@@ -13,6 +14,10 @@ class CelebrityAvatarGenerator:
         self.db = MongoDB()
         self.tmdb_service = TMDBService()
         self.avatar_service = LightXAvatarService()
+        self.biography_service = BiographyService()
+        
+    def write_creative_bio(self, celebrity_data):
+      return self.biography_service.generate_creative_biography(celebrity_data)
 
     def should_update_celebrity(self, celebrity):
         existing_celeb = self.db.get_celebrity(celebrity['id'])
@@ -51,7 +56,7 @@ class CelebrityAvatarGenerator:
             time.sleep(Settings.RATE_LIMIT_DELAY)
 
         except Exception as e:
-            logger.error(f"Error processing celebrity {celeb_basic.get('name', 'Unknown')}: {str(e)}")
+            logger.error(f"Error processing celebrity {celeb_basic['name']}: {str(e)}")
     
     def process_single_celebrity(self, celebrity_id):
         """
@@ -69,26 +74,45 @@ class CelebrityAvatarGenerator:
             if not details.get('profile_path'):
                 logger.info(f"No profile image available for {details['name']}")
                 return
+              
+            #** checing
+            check_global_popularity = self.biography_service.check_celebrity_global_popularity(details)
+            print(check_global_popularity)
+            if not check_global_popularity or check_global_popularity == 'no':
+              return
 
             # Get the full image URL
             image_url = self.tmdb_service.get_profile_image_url(details['profile_path'])
             logger.info(f"Found image URL: {image_url}")
             
-            # Generate avatar using LightX
+            #** Generate avatar using LightX
             logger.info("Starting avatar generation with LightX...")
-            avatar_data = self.avatar_service.generate_avatar(image_url)
+            avatar_data = self.avatar_service.generate_avatar(image_url, details['name'])
             
             if not avatar_data:
                 logger.error(f"Failed to generate avatar for {details['name']}")
                 return
 
             logger.info("Avatar generated successfully")
+          
+            transformed_name = self.biography_service.transform_name(details["name"])
+            if not transformed_name:
+                logger.warning(f"Could not generate creative biography for {celeb_basic['name']}")
+                creative_bio = None  # Fallback to None if generation fails
+            
+            creative_bio = self.biography_service.generate_creative_biography(details, transformed_name)
+            if not creative_bio:
+                logger.warning(f"Could not generate creative biography for {celeb_basic['name']}")
+                creative_bio = None  # Fallback to None if generation fails
+                
 
-            # Create celebrity object and save to database
-            celebrity = Celebrity(details, avatar_data)
-            self.db.save_celebrity(celebrity)
+            #** Create celebrity object and save to database
+            celebrity = Celebrity(details, avatar_data, creative_bio, transformed_name)
+            # celebrity = Celebrity(details, image_url, creative_bio, transformed_name)
+            self.db.save_celebrity(celebrity.to_dict())
             
             logger.info(f"Successfully processed and saved {details['name']}")
+            logger.info(f"Successfully processed and saved {transformed_name}")
 
         except Exception as e:
             logger.error(f"Error processing celebrity ID {celebrity_id}: {str(e)}")
@@ -97,24 +121,25 @@ class CelebrityAvatarGenerator:
         try:
             celebrities = self.tmdb_service.fetch_popular_celebrities()
             for celeb in celebrities:
-                self.process_celebrity(celeb)
+                self.process_single_celebrity(celeb['id'])
+                # self.process_celebrity(celeb)
         finally:
             self.db.close()
     
     #** Testing
-    # def run_test(self):
-    #     try:
-    #         # Test with a specific celebrity ID
-    #         # Example: Tom Cruise's TMDB ID is 500
-    #         test_celebrity_id = 231909  # You can change this to any celebrity ID
-    #         logger.info(f"Starting test with celebrity ID: {test_celebrity_id}")
-    #         self.process_single_celebrity(test_celebrity_id)
-    #     finally:
-    #         self.db.close()
+    def run_test(self):
+        try:
+            # Test with a specific celebrity ID
+            # Example: Tom Cruise's TMDB ID is 500
+            test_celebrity_id = 10859  # You can change this to any celebrity ID
+            logger.info(f"Starting test with celebrity ID: {test_celebrity_id}")
+            self.process_single_celebrity(test_celebrity_id)
+        finally:
+            self.db.close()
 
 def main():
     generator = CelebrityAvatarGenerator()
-    generator.run_test()
+    generator.run()
 
 if __name__ == "__main__":
     main()
