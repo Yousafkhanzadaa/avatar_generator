@@ -168,26 +168,6 @@ class BiographyService:
       birthday = celebrity_data['birthday']
       popularity = celebrity_data['popularity']
 
-      # Prompt designed to evaluate global popularity and teen appeal
-      #       popularity_prompt = f"""
-      # Analyze the following celebrity details and determine if they meet the criteria for:
-      # 1. EXTREME global fame (worldwide recognition)
-      # 2. MASSIVE fan following
-
-      # Celebrity Name: {name}
-      # Biography: {biography}
-
-      # IMPORTANT RULES:
-      # - Respond with only "yes" if the celebrity is globally recognized and has a massive fan base across multiple regions or demographics.
-      # - Consider these factors:
-      #   a) International box office success or widespread streaming popularity
-      #   b) Significant cultural impact or iconic status
-      #   c) Large and active social media following
-      #   d) Longevity or dominance in their field
-      # - Respond with "no" if the celebrity's fame is largely regional, niche, or lacks consistent global impact.
-      # - Be selective, but ensure truly global icons are recognized appropriately.
-      # """
-
       popularity_prompt = f"""Comprehensive Celebrity Global Fame Assessment
 
       Analyze the following celebrity details to determine their global recognition and significance:
