@@ -1,4 +1,5 @@
 # Celebrity Avatar Generator - Detailed Explanation
+# Changed From NerdyNotes
 
 ## 1. Project Overview
 
