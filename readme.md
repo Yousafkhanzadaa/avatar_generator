@@ -205,6 +205,8 @@ DEEPAI_API_KEY=your_deepai_api_key
 python main.py
 ```
 
+Greate
+
 ## 9. Monitoring and Logs
 
 The application generates detailed logs:
