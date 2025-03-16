@@ -1,6 +1,8 @@
 # Celebrity Avatar Generator - Detailed Explanation
 ## Project Overview
+# _________
 _nerdy_
+# gggghhgffffg
 The application fetches celebrity data from TMDB (The Movie Database), generates cartoon-style avatars from their profile pictures, and stores everything in MongoDB.
 
 ## Project Structure
@@ -15,6 +17,10 @@ celebrity_avatar/
 ├── .env                  # Environment variables
 └── main.py               # Application entry point
 ```
+# 
+# 
+# 
+# 
 
 
 ## Detailed Flow
