@@ -245,3 +245,5 @@ You can verify the results by:
 2. Verifying avatar generation quality.
 3. Monitoring the logs for any errors.
 4. Checking rate limit compliance.
+
+- [ ] this is working 😀
