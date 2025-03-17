@@ -246,4 +246,4 @@ You can verify the results by:
 3. Monitoring the logs for any errors.
 4. Checking rate limit compliance.
 
-- [ ] this is working 😀
+- [x] this is working 😀
