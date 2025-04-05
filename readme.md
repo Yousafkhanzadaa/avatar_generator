@@ -283,6 +283,4 @@ You can verify the results by:
 ## hshhshxxhl
 
 
-Kyxkyxkxyztkzkktxyktzt
-#udlyxlyxluxxulhlh
-# mxhlhlcchuxlulxuulc
+Kyxkyxkxyztkzkktxyktz
